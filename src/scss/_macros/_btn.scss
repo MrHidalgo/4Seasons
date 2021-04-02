@@ -1,0 +1,43 @@
+// BUTTON :: START
+
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #006470;
+  box-shadow: none;
+  border-radius: 2rem;
+  background-color: #006470;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &--center {
+      justify-content: center;
+    }
+    &--end {
+      justify-content: flex-end;
+    }
+    &--start {
+      justify-content: flex-start;
+    }
+  }
+
+  span {
+    z-index: 2;
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+}
+
+// BUTTON :: END
