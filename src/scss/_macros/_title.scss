@@ -1,12 +1,14 @@
 // TITLE :: START
 
 .c-title {
-  &__text {
-    &-wrap {}
-  }
+  padding-bottom: 25px;
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 
-  &__icon {
-    &-wrap {}
+  &--white {
+    color: #ffffff;
   }
 }
 

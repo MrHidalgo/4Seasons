@@ -1,3 +1,40 @@
+@charset "UTF-8";
+/* line 14, src/scss/_utilities/_extend.scss */
+.reviews__box-media > div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 38, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
+  content: "";
+}
+
 @font-face {
   font-family: "Metropolis";
   src: url("../fonts/Metropolis-ExtraLight.woff2") format("woff2"), url("../fonts/Metropolis-ExtraLight.woff") format("woff"), url("../fonts/Metropolis-ExtraLight.ttf") format("truetype"), url("../fonts/Metropolis-ExtraLight.svg#Metropolis") format("svg");
@@ -321,6 +358,20 @@ picture {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/* line 3, src/scss/_macros/_title.scss */
+.c-title {
+  padding-bottom: 25px;
+  color: #3c3c3c;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 10, src/scss/_macros/_title.scss */
+.c-title--white {
+  color: #ffffff;
 }
 
 /* line 3, src/scss/_macros/_btn.scss */
@@ -662,6 +713,259 @@ picture {
   right: 0;
   -webkit-border-radius: 2rem;
           border-radius: 2rem;
+}
+
+/* line 3, src/scss/_components/homepage/_reviews.scss */
+.reviews {
+  overflow: hidden;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+/* line 9, src/scss/_components/homepage/_reviews.scss */
+.reviews__bg {
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: -webkit-calc(100% - (50px + 50px));
+  height: calc(100% - (50px + 50px));
+  background-color: #f3f3f3;
+}
+
+/* line 20, src/scss/_components/homepage/_reviews.scss */
+.reviews__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 25, src/scss/_components/homepage/_reviews.scss */
+.reviews__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+/* line 31, src/scss/_components/homepage/_reviews.scss */
+.reviews__subtitle {
+  color: #3c3c3c;
+  font-size: 20px;
+}
+
+/* line 36, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 53px;
+  height: 53px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 11.437px 17.612px 23.28px 0.72px rgba(80, 80, 80, 0.05);
+          box-shadow: 11.437px 17.612px 23.28px 0.72px rgba(80, 80, 80, 0.05);
+  background-color: white;
+  -webkit-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 47, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0.55;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 53, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+/* line 57, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn:hover {
+  background-color: #006470;
+  -webkit-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 61, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn:hover span {
+  color: #fff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 67, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 300px;
+}
+
+/* line 73, src/scss/_components/homepage/_reviews.scss */
+.reviews__btn span {
+  font-size: 25px;
+  color: #3c3c3c;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 80, src/scss/_components/homepage/_reviews.scss */
+.reviews__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  padding: 20px;
+  background-color: #00a79b;
+  -webkit-box-shadow: 11.437px 17.612px 23.28px 0.72px rgba(80, 80, 80, 0.05);
+          box-shadow: 11.437px 17.612px 23.28px 0.72px rgba(80, 80, 80, 0.05);
+}
+
+/* line 88, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-head {
+  padding-bottom: 20px;
+}
+
+/* line 92, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+/* line 99, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+
+/* line 105, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-rating > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 111, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-rating .icon-font {
+  font-size: 15px;
+  color: #efc02f;
+}
+
+/* line 115, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-rating .icon-font:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+/* line 120, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-rating p {
+  padding-top: 2px;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* line 132, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-desc p,
+.reviews__box-desc span {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* line 138, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-desc p {
+  font-weight: 700;
+}
+
+/* line 143, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 147, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-media > div {
+  overflow: hidden;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 153, src/scss/_components/homepage/_reviews.scss */
+.reviews__box-media > div:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+/* line 165, src/scss/_components/homepage/_reviews.scss */
+.reviews .swiper-container {
+  opacity: 0;
+}
+
+/* line 169, src/scss/_components/homepage/_reviews.scss */
+.reviews .swiper-slide {
+  width: 400px !important;
+  height: auto;
+  min-height: 100%;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

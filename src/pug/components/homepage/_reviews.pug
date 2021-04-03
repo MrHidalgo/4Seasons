@@ -1,0 +1,96 @@
+// SECTION :: START
+
+section#reviews.reviews
+
+  .reviews__bg
+
+  .c-grid
+
+    .reviews__wrapper
+
+      .reviews__header
+        div
+          h6.reviews__title.c-title WHAT OUR CUSTOMERS THINK
+          p.reviews__subtitle We take pride in our quality and service
+
+        div
+
+          .reviews__btn-wrapper
+            a.reviews__btn.reviews__btn--prev(href="#")
+              span <
+            a.reviews__btn.reviews__btn--next(href="#")
+              span >
+
+  .reviews__slider
+    .reviewsSwiper.swiper-container
+      .swiper-wrapper
+        - for(let i = 0; i < 6; i++)
+          each val, idx in [1,2,3]
+            .swiper-slide
+              .reviews__box
+                .reviews__box-head
+                  if(idx === 0)
+                    .reviews__box-desc
+                      span J.T on Feb 17, 2021
+                  else if(idx === 1)
+                    .reviews__box-desc
+                      span Pat T. on Jan 25, 2021
+                  else if(idx === 2)
+                    .reviews__box-desc
+                      span Sebastian M. on Nov 26, 2020
+                  else if(idx === 3)
+                    .reviews__box-desc
+                      span Mat T. on Jan 25, 2021
+
+                  .reviews__box-rating
+                    div
+                      i.icon-font.icon-star
+                      i.icon-font.icon-star
+                      i.icon-font.icon-star
+                      i.icon-font.icon-star
+                      i.icon-font.icon-star
+                    div
+                      if(idx === 0)
+                        p LUMA 400 LED
+                      else if(idx === 1)
+                        p LUMA 400 LED
+                      else if(idx === 2)
+                        p SAMSUNG LM301B LED
+                      else if(idx === 3)
+                        p LUMA 1800 LED
+
+                .reviews__box-body
+
+                  if(idx === 0)
+                    .reviews__box-desc
+                      p Great solution for my plants!
+                      span Yet another awesome purchase from herbal house. Light preforming very well looking forward to seeing the end product and making my next purchase. Awesome!
+                  else if(idx === 1)
+                    .reviews__box-desc
+                      p Thanks. Awesome product guys!
+                      span Easy to install, plug in and your off. Even through lockdown, moving stores and technical difficulties the team was always in touch. Will definitely be buying more. Great work!
+                  else if(idx === 2)
+                    .reviews__box-desc
+                      p LED King!
+                      span As a novice to indoor plant cultivation I scoured the 'net looking for the best deal. I kept going back to check on this light as it seemed too cheap for the specs. The quality and performance of this LED is absolutely amazing, and comparable with other top brands, and the dimmer control makes it suitable for all stages of plant growth, and with a two year warranty its an unbeatable choice.
+                  else if(idx === 3)
+                    .reviews__box-desc
+                      p Great service!
+                      span Superior product and great communication throughout the ordering process. Shame the courier left the boxes in full view of the roadside even though the email said they needed
+
+                .reviews__box-footer
+                  .reviews__box-media
+                    if(idx === 0)
+                      div
+                        img(src="img/img-reviews-1.png" srcset='img/img-reviews-1@2x.png 2x' alt="")
+                    else if (idx === 1)
+                      div
+                        img(src="img/img-reviews-2.png" srcset='img/img-reviews-2@2x.png 2x' alt="")
+                      div
+                        img(src="img/img-reviews-3.png" srcset='img/img-reviews-3@2x.png 2x' alt="")
+                    else if (idx === 3)
+                      div
+                        img(src="img/img-reviews-4.png" srcset='img/img-reviews-4@2x.png 2x' alt="")
+
+
+// SECTION :: END
