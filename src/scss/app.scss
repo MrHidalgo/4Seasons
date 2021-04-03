@@ -21,7 +21,7 @@
 @import "_shared/main-setting-reset";
 @import "_shared/grid";
 @import "_shared/common";
-//@import "_shared/magnificPopup";
+@import "_shared/magnificPopup";
 @import "_shared/iconFont";
 /// MACROS
 /// ===============
@@ -33,4 +33,5 @@
 @import "_components/common/header";
 @import "_components/common/footer";
 
+@import "_components/homepage/video";
 @import "_components/homepage/reviews";

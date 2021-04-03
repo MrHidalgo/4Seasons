@@ -1,0 +1,64 @@
+// SECTION :: START
+
+.video {
+	position: relative;
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		.icon-font {
+			z-index: 2;
+			position: absolute;
+			top: 50%;
+			left: 35%;
+			transform: translate(-50%, -50%);
+			color: rgba(#ffffff, 0.07);
+			font-size: 650px;
+		}
+
+		video,
+		iframe {
+			@extend %imageResCoverAbs;
+		}
+
+		&:after {
+			content: '';
+			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#070707, 0.7);
+		}
+	}
+
+	&__wrapper {
+		z-index: 5;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		min-height: 100vh;
+		text-align: right;
+
+		> div {
+			width: 100%;
+			max-width: 515px;
+			margin-left: auto;
+		}
+	}
+
+	&__desc {
+		padding-bottom: 50px;
+		font-size: 16px;
+		color: #ffffff;
+	}
+}
+
+// SECTION :: END
