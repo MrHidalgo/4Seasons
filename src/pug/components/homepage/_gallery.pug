@@ -1,0 +1,39 @@
+// SECTION :: START
+
+section#gallery.gallery
+
+  .gallery__bg
+
+  .c-grid
+    .gallery__wrapper
+
+      .gallery__header
+        div
+          h6.gallery__title.c-title 4Seasons Grow Light in use
+
+        div
+
+          .gallery__btn-wrapper
+            a.gallery__btn.gallery__btn--prev(href="#")
+              span <
+            a.gallery__btn.gallery__btn--next(href="#")
+              span >
+
+  .gallery__slider
+    .gallerySwiper.swiper-container
+      .swiper-wrapper
+        each val, idx in [1,2,3]
+          .swiper-slide
+            .gallery__box
+              img(src="img/img-gallery-1.jpg" alt="")
+          .swiper-slide
+            .gallery__box
+              img(src="img/img-gallery-2.jpg" alt="")
+          .swiper-slide
+            .gallery__box
+              img(src="img/img-gallery-3.jpg" alt="")
+          .swiper-slide
+            .gallery__box
+              img(src="img/img-gallery-4.jpg" alt="")
+
+// SECTION :: END

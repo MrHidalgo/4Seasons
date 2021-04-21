@@ -25,7 +25,15 @@
 	&__header {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		width: 100%;
 		padding-bottom: 50px;
+
+		> div {
+			& + div {
+				padding-left: 15px;
+			}
+		}
 	}
 
 	&__subtitle {
@@ -67,7 +75,7 @@
 		&-wrapper {
 			display: flex;
 			align-items: center;
-			padding-left: 300px;
+			padding-right: 300px;
 		}
 
 		span {
