@@ -27,17 +27,26 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == play {
+	@if $filename == growth {
 		$char: "\E001";
 	}
-	@if $filename == star-full {
+	@if $filename == guarantee {
 		$char: "\E002";
 	}
-	@if $filename == star-half {
+	@if $filename == package {
 		$char: "\E003";
 	}
-	@if $filename == star {
+	@if $filename == play {
 		$char: "\E004";
+	}
+	@if $filename == star-full {
+		$char: "\E005";
+	}
+	@if $filename == star-half {
+		$char: "\E006";
+	}
+	@if $filename == star {
+		$char: "\E007";
 	}
 
 	@return $char;
@@ -54,6 +63,18 @@
 	}
 }
 
+.icon-growth {
+	@include icon(growth);
+
+}
+.icon-guarantee {
+	@include icon(guarantee);
+
+}
+.icon-package {
+	@include icon(package);
+
+}
 .icon-play {
 	@include icon(play);
 
