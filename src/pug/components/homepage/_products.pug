@@ -1,0 +1,37 @@
+// SECTION :: START
+
+section#products.products
+  .c-grid
+
+    p.products__title.c-title GROW LIGHTS DESIGNED FOR ENHANCED FLORAL ACTIVITY
+    p.products__desc ED Hydroponic Grow Light technology is proving to give consistently high-end results, efficient running costs and long-term reliability. If your a classic long time HPS grower, this is worth considering the switch next time a ballast or bulb fails. The lower thermal output is a huge saving grace over the warmer seasons of the year, essentially allowing you to run lighter extraction equipment saving you more power yet again. Providing you with the best all in one LED Grow Lights NZ has on offer.
+
+    .products__wrapper
+
+      .products__box-wrapper
+        each val, idx in [1,2,3,4,5,6]
+          div
+            a.products__box(href="#")
+              .products__box-head
+                img(src="img/img-products-" + val + ".png" alt="")
+              .products__box-body
+                p.products__box-name Quantum PAR LED Grow Light - Samsung LM301B With Meanwell Driver
+                .products__box-rating
+                  i.icon-font.icon-star-full
+                  i.icon-font.icon-star-full
+                  i.icon-font.icon-star-full
+                  i.icon-font.icon-star-full
+                  i.icon-font.icon-star-half
+                  span 2 Reviews
+                p.products__box-old $400
+                .products__box-content
+                  div
+                    p.products__box-new $990
+                  div
+                    p.products__box-buy Buy
+
+      .c-btn__wrapper.c-btn__wrapper--center
+        a.c-btn(href="#")
+          span VIEW ALL
+
+// SECTION :: END

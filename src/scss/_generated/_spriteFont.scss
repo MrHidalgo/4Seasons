@@ -30,8 +30,14 @@
 	@if $filename == play {
 		$char: "\E001";
 	}
-	@if $filename == star {
+	@if $filename == star-full {
 		$char: "\E002";
+	}
+	@if $filename == star-half {
+		$char: "\E003";
+	}
+	@if $filename == star {
+		$char: "\E004";
 	}
 
 	@return $char;
@@ -50,6 +56,14 @@
 
 .icon-play {
 	@include icon(play);
+
+}
+.icon-star-full {
+	@include icon(star-full);
+
+}
+.icon-star-half {
+	@include icon(star-half);
 
 }
 .icon-star {
