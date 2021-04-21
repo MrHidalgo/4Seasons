@@ -68,4 +68,24 @@ const initSwiper = () => {
   });
   // end :: GALLERY
   /* ========== */
+  
+  /* start :: POPULAR */
+  const galleryThumbs = new Swiper('.popularSwiperThumb', {
+    direction: 'vertical',
+    mousewheel: true,
+    spaceBetween: 20,
+    slidesPerView: 4,
+    freeMode: false,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  
+  const galleryTop = new Swiper('.popularSwiper', {
+    spaceBetween: 20,
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+  /* end :: POPULAR */
+  /* ========== */
 };

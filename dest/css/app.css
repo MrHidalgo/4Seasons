@@ -20,7 +20,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-growth:before, .icon-guarantee:before, .icon-package:before, .icon-play:before, .icon-star-full:before, .icon-star-half:before, .icon-star:before {
+.icon-facebook:before, .icon-growth:before, .icon-guarantee:before, .icon-package:before, .icon-play:before, .icon-star-full:before, .icon-star-half:before, .icon-star:before, .icon-twitter:before, .icon-whatsapp:before, .icon-work-done:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,39 +31,59 @@
   text-transform: none;
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-growth:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-guarantee:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-growth:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-package:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-guarantee:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-play:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-package:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-star-full:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-play:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-star-half:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-star-full:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
-.icon-star:before {
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-star-half:before {
   content: "";
+}
+
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-star:before {
+  content: "";
+}
+
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-whatsapp:before {
+  content: "";
+}
+
+/* line 68, src/scss/_generated/_spriteFont.scss */
+.icon-work-done:before {
+  content: "";
 }
 
 @font-face {
@@ -1467,6 +1487,513 @@ picture {
   padding-bottom: 100px;
   font-size: 30px;
   color: #3c3c3c;
+}
+
+/* line 3, src/scss/_components/homepage/_popular.scss */
+.popular {
+  padding-bottom: 140px;
+}
+
+/* line 6, src/scss/_components/homepage/_popular.scss */
+.popular__title {
+  text-align: center;
+}
+
+/* line 10, src/scss/_components/homepage/_popular.scss */
+.popular__desc {
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: #3c3c3c;
+}
+
+/* line 17, src/scss/_components/homepage/_popular.scss */
+.popular__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 20, src/scss/_components/homepage/_popular.scss */
+.popular__wrapper-left, .popular__wrapper-right {
+  width: 50%;
+}
+
+/* line 25, src/scss/_components/homepage/_popular.scss */
+.popular__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 31, src/scss/_components/homepage/_popular.scss */
+.popular__name {
+  padding-bottom: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+/* line 38, src/scss/_components/homepage/_popular.scss */
+.popular__rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px;
+}
+
+/* line 43, src/scss/_components/homepage/_popular.scss */
+.popular__rating .icon-font {
+  font-size: 15px;
+  color: #efc02f;
+}
+
+/* line 47, src/scss/_components/homepage/_popular.scss */
+.popular__rating .icon-font:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+/* line 51, src/scss/_components/homepage/_popular.scss */
+.popular__rating .icon-font + span {
+  padding-left: 10px;
+}
+
+/* line 56, src/scss/_components/homepage/_popular.scss */
+.popular__rating span {
+  display: block;
+  padding-top: 2px;
+  font-size: 15px;
+  line-height: 1;
+  color: #3c3c3c;
+}
+
+/* line 65, src/scss/_components/homepage/_popular.scss */
+.popular__old {
+  text-decoration: line-through;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(60, 60, 60, 0.75);
+}
+
+/* line 72, src/scss/_components/homepage/_popular.scss */
+.popular__new {
+  padding-bottom: 15px;
+  font-size: 25px;
+  color: #ff0000;
+}
+
+/* line 78, src/scss/_components/homepage/_popular.scss */
+.popular__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+/* line 84, src/scss/_components/homepage/_popular.scss */
+.popular__info span {
+  font-size: 16px;
+  color: #3c3c3c;
+}
+
+/* line 88, src/scss/_components/homepage/_popular.scss */
+.popular__info span + img {
+  margin-left: 10px;
+}
+
+/* line 93, src/scss/_components/homepage/_popular.scss */
+.popular__info img {
+  display: block;
+  max-width: 1000%;
+  height: auto;
+}
+
+/* line 100, src/scss/_components/homepage/_popular.scss */
+.popular__ships {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+}
+
+/* line 106, src/scss/_components/homepage/_popular.scss */
+.popular__ships .icon-font {
+  color: #00a79b;
+  font-size: 24px;
+}
+
+/* line 110, src/scss/_components/homepage/_popular.scss */
+.popular__ships .icon-font + span {
+  padding-left: 10px;
+}
+
+/* line 115, src/scss/_components/homepage/_popular.scss */
+.popular__ships span {
+  font-size: 16px;
+  color: #00a79b;
+}
+
+/* line 121, src/scss/_components/homepage/_popular.scss */
+.popular__count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+/* line 127, src/scss/_components/homepage/_popular.scss */
+.popular__count > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  height: 40px;
+  border: 1px solid #006470;
+}
+
+/* line 135, src/scss/_components/homepage/_popular.scss */
+.popular__count > div + div {
+  padding-left: 25px;
+}
+
+/* line 140, src/scss/_components/homepage/_popular.scss */
+.popular__count-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #006470;
+}
+
+/* line 151, src/scss/_components/homepage/_popular.scss */
+.popular__count-btn:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  width: 1px;
+  height: -webkit-calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #006470;
+}
+
+/* line 160, src/scss/_components/homepage/_popular.scss */
+.popular__count-btn:nth-of-type(1) {
+  -webkit-border-radius: 2rem 0 0 2rem;
+          border-radius: 2rem 0 0 2rem;
+}
+
+/* line 163, src/scss/_components/homepage/_popular.scss */
+.popular__count-btn:nth-of-type(1):after {
+  right: 0;
+}
+
+/* line 167, src/scss/_components/homepage/_popular.scss */
+.popular__count-btn:nth-of-type(2) {
+  -webkit-border-radius: 0 2rem 2rem 0;
+          border-radius: 0 2rem 2rem 0;
+}
+
+/* line 170, src/scss/_components/homepage/_popular.scss */
+.popular__count-btn:nth-of-type(2):after {
+  left: 0;
+}
+
+/* line 176, src/scss/_components/homepage/_popular.scss */
+.popular__count-input {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+/* line 194, src/scss/_components/homepage/_popular.scss */
+.popular__details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 198, src/scss/_components/homepage/_popular.scss */
+.popular__details p {
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+/* line 205, src/scss/_components/homepage/_popular.scss */
+.popular__details ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 209, src/scss/_components/homepage/_popular.scss */
+.popular__details ul li {
+  color: #3c3c3c;
+  font-size: 16px;
+}
+
+/* line 213, src/scss/_components/homepage/_popular.scss */
+.popular__details ul li:not(:last-of-type) {
+  padding-bottom: 5px;
+}
+
+/* line 219, src/scss/_components/homepage/_popular.scss */
+.popular__details a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #006470;
+}
+
+/* line 226, src/scss/_components/homepage/_popular.scss */
+.popular__share {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 231, src/scss/_components/homepage/_popular.scss */
+.popular__share p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+/* line 236, src/scss/_components/homepage/_popular.scss */
+.popular__share p + div {
+  padding-left: 15px;
+}
+
+/* line 241, src/scss/_components/homepage/_popular.scss */
+.popular__share > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 245, src/scss/_components/homepage/_popular.scss */
+.popular__share > div a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 250, src/scss/_components/homepage/_popular.scss */
+.popular__share > div a:not(:last-of-type) {
+  margin-right: 15px;
+}
+
+/* line 254, src/scss/_components/homepage/_popular.scss */
+.popular__share > div a .icon-font {
+  font-size: 30px;
+  color: #3c3c3c;
+}
+
+/* line 262, src/scss/_components/homepage/_popular.scss */
+.popular__slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 1px;
+  max-height: 100%;
+  padding-top: 40px;
+}
+
+/* line 270, src/scss/_components/homepage/_popular.scss */
+.popular__slider > div {
+  max-height: 100%;
+}
+
+/* line 273, src/scss/_components/homepage/_popular.scss */
+.popular__slider > div:nth-of-type(1) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding: 30px;
+}
+
+/* line 282, src/scss/_components/homepage/_popular.scss */
+.popular__slider > div:nth-of-type(1) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 290, src/scss/_components/homepage/_popular.scss */
+.popular__slider > div:nth-of-type(2) {
+  width: 100%;
+  max-width: 120px;
+  max-height: 100%;
+}
+
+/* line 295, src/scss/_components/homepage/_popular.scss */
+.popular__slider > div:nth-of-type(2) .swiper-container {
+  height: -webkit-calc(120px * 4 + (20px * 3));
+  height: calc(120px * 4 + (20px * 3));
+}
+
+/* line 302, src/scss/_components/homepage/_popular.scss */
+.popular__slider .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 307, src/scss/_components/homepage/_popular.scss */
+.popular__slider .swiper-slide {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 313, src/scss/_components/homepage/_popular.scss */
+.popular__slider .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 3, src/scss/_components/homepage/_video.scss */

@@ -27,26 +27,38 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == growth {
+	@if $filename == facebook {
 		$char: "\E001";
 	}
-	@if $filename == guarantee {
+	@if $filename == growth {
 		$char: "\E002";
 	}
-	@if $filename == package {
+	@if $filename == guarantee {
 		$char: "\E003";
 	}
-	@if $filename == play {
+	@if $filename == package {
 		$char: "\E004";
 	}
-	@if $filename == star-full {
+	@if $filename == play {
 		$char: "\E005";
 	}
-	@if $filename == star-half {
+	@if $filename == star-full {
 		$char: "\E006";
 	}
-	@if $filename == star {
+	@if $filename == star-half {
 		$char: "\E007";
+	}
+	@if $filename == star {
+		$char: "\E008";
+	}
+	@if $filename == twitter {
+		$char: "\E009";
+	}
+	@if $filename == whatsapp {
+		$char: "\E00A";
+	}
+	@if $filename == work-done {
+		$char: "\E00B";
 	}
 
 	@return $char;
@@ -63,6 +75,10 @@
 	}
 }
 
+.icon-facebook {
+	@include icon(facebook);
+
+}
 .icon-growth {
 	@include icon(growth);
 
@@ -89,5 +105,17 @@
 }
 .icon-star {
 	@include icon(star);
+
+}
+.icon-twitter {
+	@include icon(twitter);
+
+}
+.icon-whatsapp {
+	@include icon(whatsapp);
+
+}
+.icon-work-done {
+	@include icon(work-done);
 
 }

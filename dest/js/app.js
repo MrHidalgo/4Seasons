@@ -168,6 +168,26 @@ var initSwiper = function initSwiper() {
   });
   // end :: GALLERY
   /* ========== */
+
+  /* start :: POPULAR */
+  var galleryThumbs = new Swiper('.popularSwiperThumb', {
+    direction: 'vertical',
+    mousewheel: true,
+    spaceBetween: 20,
+    slidesPerView: 4,
+    freeMode: false,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true
+  });
+
+  var galleryTop = new Swiper('.popularSwiper', {
+    spaceBetween: 20,
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+  /* end :: POPULAR */
+  /* ========== */
 };
 
 /**
