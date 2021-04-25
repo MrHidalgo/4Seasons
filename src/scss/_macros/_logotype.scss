@@ -3,27 +3,19 @@
 .logo {
 	display: flex;
 
-	&.logo--footer {
-		.logo {
-			&__btn {
-				max-width: 223px;
-
-				img {
-					height: 45px;
-				}
-			}
-		}
-	}
+	&.logo--footer {}
 
 	&__btn {
 		display: flex;
 		align-items: flex-start;
+		max-width: 223px;
 	}
 
 	img {
 		display: block;
 		max-width: 100%;
 		height: auto;
+		height: 45px;
 	}
 }
 

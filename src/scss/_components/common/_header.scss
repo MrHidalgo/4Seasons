@@ -1,5 +1,70 @@
 // HEADER :: START
 
-.header {}
+.header {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	.c-grid-fluid {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		&-left,
+		&-right {
+			width: 100%;
+			max-width: 250px;
+		}
+
+		&-middle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+		}
+
+		&-right {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		a {
+			display: flex;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			font-size: 18px;
+			font-weight: 600;
+			color: #ffffff;
+		}
+	}
+
+	&__search {
+		display: flex;
+
+		.icon-font {
+			font-size: 25px;
+			color: #ffffff;
+		}
+	}
+}
 
 // HEADER :: END

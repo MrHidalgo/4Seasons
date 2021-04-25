@@ -1,7 +1,27 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
+  .c-grid-fluid
     .header__wrapper
+      .header__wrapper-left
+
+        .logo.logo--header
+          a.logo__btn(href="/")
+            img(src="img/logo.svg" alt="")
+
+      .header__wrapper-middle
+
+        nav.header__nav
+          a(href="#") LED GROW LIGHTS
+          a(href="#") DELIVERY
+          a(href="#") FAQs
+          a(href="#") ABOUT US
+          a(href="#") CONTACTS
+
+      .header__wrapper-right
+
+        a.header__search(href="#")
+          i.icon-font.icon-search
+
 
 // HEADER :: END
