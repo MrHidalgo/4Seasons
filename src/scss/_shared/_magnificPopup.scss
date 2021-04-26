@@ -53,7 +53,7 @@
   .mfp-with-anim {
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    transform: translateX(100%);
+    transform: translateY(-50%);
   }
 
   &.mfp-bg {
@@ -64,7 +64,7 @@
   &.mfp-ready {
     .mfp-with-anim {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateY(0);
     }
     &.mfp-bg {
       opacity: 0.8;
@@ -73,7 +73,7 @@
 
   &.mfp-removing {
     .mfp-with-anim {
-      transform: translateX(100%);
+      transform: translateY(-50%);
       opacity: 0;
     }
     &.mfp-bg {

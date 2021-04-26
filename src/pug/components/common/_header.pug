@@ -2,12 +2,14 @@
 
 header#header.header
   .c-grid-fluid
+
     .header__wrapper
       .header__wrapper-left
 
         .logo.logo--header
           a.logo__btn(href="/")
             img(src="img/logo.svg" alt="")
+            img(src="img/logo--black.svg" alt="")
 
       .header__wrapper-middle
 
@@ -20,8 +22,14 @@ header#header.header
 
       .header__wrapper-right
 
-        a.header__search(href="#")
+        a.header__search(href="#" search-js)
           i.icon-font.icon-search
+
+  .header__search-wrapper(search-content-js)
+    label
+      input(type='text' name='' placeholder='Search...')
+    a(href="#" search-close-js)
+      i.icon-font.icon-close
 
 
 // HEADER :: END

@@ -33,9 +33,9 @@ section#popular.popular
 
         .popular__count
           div
-            a.popular__count-btn(href="#") -
-            input.popular__count-input(type='text' placeholder="" value="1")
-            a.popular__count-btn(href="#") +
+            a.popular__count-btn(href="#" count-minus-js) -
+            input.popular__count-input(type='text' placeholder="" value="1" count-js)
+            a.popular__count-btn(href="#" count-add-js) +
           div
             .c-btn__wrapper
               a.c-btn(href="#")
@@ -79,19 +79,31 @@ section#popular.popular
         .popular__slider
           div
             .popularSwiper.swiper-container
-              .swiper-wrapper
+              .swiper-wrapper(popup-popular-js)
                 .swiper-slide
                   img(src="img/img-products-1.png" alt="")
+                  a(href="img/img-products-1.png" title='[Product Name]')
+                    i.icon-font.icon-zoom-in
                 .swiper-slide
                   img(src="img/img-products-2.png" alt="")
+                  a(href="img/img-products-2.png" title='[Product Name]')
+                    i.icon-font.icon-zoom-in
                 .swiper-slide
                   img(src="img/img-products-3.png" alt="")
+                  a(href="img/img-products-3.png" title='[Product Name]')
+                    i.icon-font.icon-zoom-in
                 .swiper-slide
                   img(src="img/img-products-4.png" alt="")
+                  a(href="img/img-products-4.png" title='[Product Name]')
+                    i.icon-font.icon-zoom-in
                 .swiper-slide
                   img(src="img/img-products-5.png" alt="")
+                  a(href="img/img-products-5.png" title='[Product Name]')
+                    i.icon-font.icon-zoom-in
                 .swiper-slide
                   img(src="img/img-products-6.png" alt="")
+                  a(href="img/img-products-6.png" title='[Product Name]')
+                    i.icon-font.icon-zoom-in
           div
             .popularSwiperThumb.swiper-container
               .swiper-wrapper

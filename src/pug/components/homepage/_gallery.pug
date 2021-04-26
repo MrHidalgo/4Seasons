@@ -21,19 +21,23 @@ section#gallery.gallery
 
   .gallery__slider
     .gallerySwiper.swiper-container
-      .swiper-wrapper
+      .swiper-wrapper(popup-gallery-js)
         each val, idx in [1,2,3]
           .swiper-slide
-            .gallery__box
+            a.gallery__box(href="img/img-gallery-1.jpg" title='[Product Name]')
               img(src="img/img-gallery-1.jpg" alt="")
+              i.icon-font.icon-zoom-in
           .swiper-slide
-            .gallery__box
+            a.gallery__box(href="img/img-gallery-2.jpg" title='[Product Name]')
               img(src="img/img-gallery-2.jpg" alt="")
+              i.icon-font.icon-zoom-in
           .swiper-slide
-            .gallery__box
+            a.gallery__box(href="img/img-gallery-3.jpg" title='[Product Name]')
               img(src="img/img-gallery-3.jpg" alt="")
+              i.icon-font.icon-zoom-in
           .swiper-slide
-            .gallery__box
+            a.gallery__box(href="img/img-gallery-4.jpg" title='[Product Name]')
               img(src="img/img-gallery-4.jpg" alt="")
+              i.icon-font.icon-zoom-in
 
 // SECTION :: END

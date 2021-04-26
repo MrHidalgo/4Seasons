@@ -73,6 +73,7 @@ const initSwiper = () => {
   const galleryThumbs = new Swiper('.popularSwiperThumb', {
     direction: 'vertical',
     mousewheel: true,
+    speed: 1000,
     spaceBetween: 20,
     slidesPerView: 4,
     freeMode: false,
@@ -82,6 +83,11 @@ const initSwiper = () => {
   
   const galleryTop = new Swiper('.popularSwiper', {
     spaceBetween: 20,
+    effect: 'fade',
+    speed: 1000,
+    fadeEffect: {
+      crossFade: true
+    },
     thumbs: {
       swiper: galleryThumbs
     }

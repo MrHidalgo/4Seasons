@@ -21,13 +21,18 @@
       <div class="c-grid-fluid">
         <div class="header__wrapper">
           <div class="header__wrapper-left">
-            <div class="logo logo--header"><a class="logo__btn" href="/"><img src="img/logo.svg" alt=""></a></div>
+            <div class="logo logo--header"><a class="logo__btn" href="/"><img src="img/logo.svg" alt=""><img src="img/logo--black.svg" alt=""></a></div>
           </div>
           <div class="header__wrapper-middle">
             <nav class="header__nav"><a href="#">LED GROW LIGHTS</a><a href="#">DELIVERY</a><a href="#">FAQs</a><a href="#">ABOUT US</a><a href="#">CONTACTS</a></nav>
           </div>
-          <div class="header__wrapper-right"><a class="header__search" href="#"><i class="icon-font icon-search"></i></a></div>
+          <div class="header__wrapper-right"><a class="header__search" href="#" search-js><i class="icon-font icon-search"></i></a></div>
         </div>
+      </div>
+      <div class="header__search-wrapper" search-content-js>
+        <label>
+          <input type="text" name="" placeholder="Search...">
+        </label><a href="#" search-close-js><i class="icon-font icon-close"></i></a>
       </div>
     </header>
     <!-- HEADER :: END-->
@@ -35,6 +40,7 @@
       <!-- SECTION :: START-->
       <main class="main" id="main">
         <div class="main__bg">
+          <div class="main__branch"></div>
           <div><img src="img/img-main-product.png" srcset="img/img-main-product@2x.png 2x" alt=""></div>
         </div>
         <div class="c-grid">
@@ -66,43 +72,19 @@
         </div>
         <div class="gallery__slider">
           <div class="gallerySwiper swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-1.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-2.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-3.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-4.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-1.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-2.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-3.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-4.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-1.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-2.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-3.jpg" alt=""></div>
-              </div>
-              <div class="swiper-slide">
-                <div class="gallery__box"><img src="img/img-gallery-4.jpg" alt=""></div>
-              </div>
+            <div class="swiper-wrapper" popup-gallery-js>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-1.jpg" title="[Product Name]"><img src="img/img-gallery-1.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-2.jpg" title="[Product Name]"><img src="img/img-gallery-2.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-3.jpg" title="[Product Name]"><img src="img/img-gallery-3.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-4.jpg" title="[Product Name]"><img src="img/img-gallery-4.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-1.jpg" title="[Product Name]"><img src="img/img-gallery-1.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-2.jpg" title="[Product Name]"><img src="img/img-gallery-2.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-3.jpg" title="[Product Name]"><img src="img/img-gallery-3.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-4.jpg" title="[Product Name]"><img src="img/img-gallery-4.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-1.jpg" title="[Product Name]"><img src="img/img-gallery-1.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-2.jpg" title="[Product Name]"><img src="img/img-gallery-2.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-3.jpg" title="[Product Name]"><img src="img/img-gallery-3.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
+              <div class="swiper-slide"><a class="gallery__box" href="img/img-gallery-4.jpg" title="[Product Name]"><img src="img/img-gallery-4.jpg" alt=""><i class="icon-font icon-zoom-in"></i></a></div>
             </div>
           </div>
         </div>
@@ -273,8 +255,8 @@
               <p class="popular__info"><span>or 4 interest-free payments of with</span><img src="img/img-afterpay-logo.png" srcset="img/img-afterpay-logo@2x.png 2x" alt=""></p>
               <p class="popular__ships"><i class="icon-font icon-work-done"></i><span>In stock! Usually ships within 24 hours.</span></p>
               <div class="popular__count">
-                <div><a class="popular__count-btn" href="#">-</a>
-                  <input class="popular__count-input" type="text" placeholder="" value="1"><a class="popular__count-btn" href="#">+</a>
+                <div><a class="popular__count-btn" href="#" count-minus-js>-</a>
+                  <input class="popular__count-input" type="text" placeholder="" value="1" count-js><a class="popular__count-btn" href="#" count-add-js>+</a>
                 </div>
                 <div>
                   <div class="c-btn__wrapper"><a class="c-btn" href="#"><span>ADD TO CART</span></a></div>
@@ -303,13 +285,13 @@
               <div class="popular__slider">
                 <div>
                   <div class="popularSwiper swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="img/img-products-1.png" alt=""></div>
-                      <div class="swiper-slide"><img src="img/img-products-2.png" alt=""></div>
-                      <div class="swiper-slide"><img src="img/img-products-3.png" alt=""></div>
-                      <div class="swiper-slide"><img src="img/img-products-4.png" alt=""></div>
-                      <div class="swiper-slide"><img src="img/img-products-5.png" alt=""></div>
-                      <div class="swiper-slide"><img src="img/img-products-6.png" alt=""></div>
+                    <div class="swiper-wrapper" popup-popular-js>
+                      <div class="swiper-slide"><img src="img/img-products-1.png" alt=""><a href="img/img-products-1.png" title="[Product Name]"><i class="icon-font icon-zoom-in"></i></a></div>
+                      <div class="swiper-slide"><img src="img/img-products-2.png" alt=""><a href="img/img-products-2.png" title="[Product Name]"><i class="icon-font icon-zoom-in"></i></a></div>
+                      <div class="swiper-slide"><img src="img/img-products-3.png" alt=""><a href="img/img-products-3.png" title="[Product Name]"><i class="icon-font icon-zoom-in"></i></a></div>
+                      <div class="swiper-slide"><img src="img/img-products-4.png" alt=""><a href="img/img-products-4.png" title="[Product Name]"><i class="icon-font icon-zoom-in"></i></a></div>
+                      <div class="swiper-slide"><img src="img/img-products-5.png" alt=""><a href="img/img-products-5.png" title="[Product Name]"><i class="icon-font icon-zoom-in"></i></a></div>
+                      <div class="swiper-slide"><img src="img/img-products-6.png" alt=""><a href="img/img-products-6.png" title="[Product Name]"><i class="icon-font icon-zoom-in"></i></a></div>
                     </div>
                   </div>
                 </div>

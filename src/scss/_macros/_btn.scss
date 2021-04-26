@@ -12,9 +12,18 @@
   padding-left: 40px;
   padding-right: 40px;
   border: 1px solid #006470;
-  box-shadow: none;
+  box-shadow: 0 2px 5px 0 rgba(lighten(#006470, 5%), 0);
   border-radius: 2rem;
   background-color: #006470;
+  @include transition(transform, border-color, box-shadow, background-color);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px 0 rgba(lighten(#006470, 5%), 0.2);
+    border-color: lighten(#006470, 5%);
+    background-color: lighten(#006470, 5%);
+    @include transition(transform, border-color, box-shadow, background-color);
+  }
 
   &__wrapper {
     display: flex;

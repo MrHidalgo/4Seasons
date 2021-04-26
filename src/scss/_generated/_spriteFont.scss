@@ -27,41 +27,47 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == facebook {
+	@if $filename == close {
 		$char: "\E001";
 	}
-	@if $filename == growth {
+	@if $filename == facebook {
 		$char: "\E002";
 	}
-	@if $filename == guarantee {
+	@if $filename == growth {
 		$char: "\E003";
 	}
-	@if $filename == package {
+	@if $filename == guarantee {
 		$char: "\E004";
 	}
-	@if $filename == play {
+	@if $filename == package {
 		$char: "\E005";
 	}
-	@if $filename == search {
+	@if $filename == play {
 		$char: "\E006";
 	}
-	@if $filename == star-full {
+	@if $filename == search {
 		$char: "\E007";
 	}
-	@if $filename == star-half {
+	@if $filename == star-full {
 		$char: "\E008";
 	}
-	@if $filename == star {
+	@if $filename == star-half {
 		$char: "\E009";
 	}
-	@if $filename == twitter {
+	@if $filename == star {
 		$char: "\E00A";
 	}
-	@if $filename == whatsapp {
+	@if $filename == twitter {
 		$char: "\E00B";
 	}
-	@if $filename == work-done {
+	@if $filename == whatsapp {
 		$char: "\E00C";
+	}
+	@if $filename == work-done {
+		$char: "\E00D";
+	}
+	@if $filename == zoom-in {
+		$char: "\E00E";
 	}
 
 	@return $char;
@@ -78,6 +84,10 @@
 	}
 }
 
+.icon-close {
+	@include icon(close);
+
+}
 .icon-facebook {
 	@include icon(facebook);
 
@@ -124,5 +134,9 @@
 }
 .icon-work-done {
 	@include icon(work-done);
+
+}
+.icon-zoom-in {
+	@include icon(zoom-in);
 
 }

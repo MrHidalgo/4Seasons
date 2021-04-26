@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 *
@@ -14,6 +14,23 @@
 * ============================
 * ============================
 * */
+
+/**
+ * @name initHeaderFixed
+ *
+ * @description Fixing the site header in the scrolling page.
+ */
+var initHeaderFixed = function initHeaderFixed() {
+
+  var countScroll = $(window).scrollTop(),
+      headerElement = $('.header');
+
+  if (countScroll > 10) {
+    headerElement.addClass("is-fixed");
+  } else {
+    headerElement.removeClass("is-fixed");
+  }
+};
 
 /**
  * @name initPopups
@@ -37,6 +54,56 @@ var initPopups = function initPopups() {
         this.st.mainClass = this.st.el.attr('data-effect');
       },
       close: function close() {}
+    }
+  });
+
+  $('[popup-gallery-js]').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'is-show',
+    fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function titleSrc(item) {
+        return item.el.attr('title') + '<small>by Matthew Monk</small>';
+      }
+    }
+  });
+
+  $('[popup-popular-js]').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'is-show',
+    fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function titleSrc(item) {
+        return item.el.attr('title') + '<small>by Matthew Monk</small>';
+      }
     }
   });
 
@@ -173,6 +240,7 @@ var initSwiper = function initSwiper() {
   var galleryThumbs = new Swiper('.popularSwiperThumb', {
     direction: 'vertical',
     mousewheel: true,
+    speed: 1000,
     spaceBetween: 20,
     slidesPerView: 4,
     freeMode: false,
@@ -182,6 +250,11 @@ var initSwiper = function initSwiper() {
 
   var galleryTop = new Swiper('.popularSwiper', {
     spaceBetween: 20,
+    effect: 'fade',
+    speed: 1000,
+    fadeEffect: {
+      crossFade: true
+    },
     thumbs: {
       swiper: galleryThumbs
     }
@@ -191,13 +264,51 @@ var initSwiper = function initSwiper() {
 };
 
 /**
+ * @description Window on load.
+ */
+window.addEventListener('load', function (ev) {
+  initHeaderFixed();
+});
+
+/**
+ * @description Window on resize.
+ */
+window.addEventListener('resize', function (ev) {});
+
+/**
+ * @description Window on scroll.
+ */
+window.addEventListener('scroll', function (ev) {
+  initHeaderFixed();
+});
+
+/**
  * @description Document DOM ready.
  */
 (function () {
   /*
   * =============================================
   * CALLBACK :: start */
+  var searchCB = function searchCB() {
+    $('[search-js]').on('click', function (ev) {
+      $('[search-content-js]').addClass('is-open');
+    });
 
+    $('[search-close-js]').on('click', function (ev) {
+      $('[search-content-js]').removeClass('is-open');
+    });
+  };
+
+  var countCB = function countCB() {
+    $('[count-minus-js]').on('click', function (ev) {
+      if (Number($('[count-js]').val()) > 1) {
+        $('[count-js]').val(Number($('[count-js]').val()) - 1);
+      }
+    });
+    $('[count-add-js]').on('click', function (ev) {
+      $('[count-js]').val(Number($('[count-js]').val()) + 1);
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -218,6 +329,8 @@ var initSwiper = function initSwiper() {
     // ==========================================
 
     // callback
+    searchCB();
+    countCB();
     // ==========================================
   };
   initNative();

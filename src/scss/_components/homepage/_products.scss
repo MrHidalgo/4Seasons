@@ -24,6 +24,16 @@
 		display: flex;
 		flex-direction: column;
 
+		&:hover {
+			.products__box-buy {
+				&:before,
+				&:after {
+					width: 50%;
+					@include transition(width);
+				}
+			}
+		}
+
 		&-wrapper {
 			position: relative;
 			left: -60px;
@@ -109,10 +119,29 @@
 		}
 
 		&-buy {
+			position: relative;
 			font-size: 16px;
 			font-weight: 600;
 			text-transform: uppercase;
 			color: #006470;
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				width: 0;
+				height: 2px;
+				background-color: #006470;
+				@include transition(width);
+			}
+
+			&:before {
+				left: 50%;
+			}
+			&:after {
+				right: 50%;
+			}
 		}
 
 		&-content {
