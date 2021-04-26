@@ -1003,6 +1003,7 @@ picture {
 
 /* line 3, src/scss/_components/common/_footer.scss */
 .footer {
+  position: relative;
   background-color: #ffffff;
   background-image: url("../img/img-footer-bg@2x.png");
   background-repeat: no-repeat;
@@ -1011,12 +1012,62 @@ picture {
           background-size: cover;
 }
 
-/* line 13, src/scss/_components/common/_footer.scss */
+/* line 11, src/scss/_components/common/_footer.scss */
+.footer__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, src/scss/_components/common/_footer.scss */
+.footer__bg img {
+  opacity: 0.08;
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+
+/* line 26, src/scss/_components/common/_footer.scss */
+.footer__bg img:nth-of-type(1) {
+  left: 0;
+  bottom: 0;
+}
+
+/* line 30, src/scss/_components/common/_footer.scss */
+.footer__bg img:nth-of-type(2) {
+  left: 25%;
+  bottom: 200px;
+}
+
+/* line 34, src/scss/_components/common/_footer.scss */
+.footer__bg img:nth-of-type(3) {
+  left: 50%;
+  bottom: 100px;
+}
+
+/* line 38, src/scss/_components/common/_footer.scss */
+.footer__bg img:nth-of-type(4) {
+  bottom: 0;
+  right: 0;
+}
+
+/* line 45, src/scss/_components/common/_footer.scss */
+.footer__container {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 51, src/scss/_components/common/_footer.scss */
 .footer__container-2 {
   background-color: #00a79b;
 }
 
-/* line 19, src/scss/_components/common/_footer.scss */
+/* line 57, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1031,7 +1082,7 @@ picture {
   padding-bottom: 132px;
 }
 
-/* line 26, src/scss/_components/common/_footer.scss */
+/* line 64, src/scss/_components/common/_footer.scss */
 .footer__wrapper-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1048,7 +1099,7 @@ picture {
   min-height: 50px;
 }
 
-/* line 33, src/scss/_components/common/_footer.scss */
+/* line 71, src/scss/_components/common/_footer.scss */
 .footer__wrapper-top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1061,7 +1112,7 @@ picture {
   padding-bottom: 76px;
 }
 
-/* line 40, src/scss/_components/common/_footer.scss */
+/* line 78, src/scss/_components/common/_footer.scss */
 .footer__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1069,7 +1120,7 @@ picture {
   display: flex;
 }
 
-/* line 45, src/scss/_components/common/_footer.scss */
+/* line 83, src/scss/_components/common/_footer.scss */
 .footer__col-1, .footer__col-2, .footer__col-3 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1079,13 +1130,13 @@ picture {
   max-width: 100%;
 }
 
-/* line 53, src/scss/_components/common/_footer.scss */
+/* line 91, src/scss/_components/common/_footer.scss */
 .footer__col-4 {
   width: 100%;
   max-width: 45%;
 }
 
-/* line 59, src/scss/_components/common/_footer.scss */
+/* line 97, src/scss/_components/common/_footer.scss */
 .footer__title {
   padding-bottom: 30px;
   font-weight: 700;
@@ -1094,7 +1145,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 67, src/scss/_components/common/_footer.scss */
+/* line 105, src/scss/_components/common/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1111,7 +1162,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 72, src/scss/_components/common/_footer.scss */
+/* line 110, src/scss/_components/common/_footer.scss */
 .footer__nav a {
   position: relative;
   display: -webkit-box;
@@ -1122,12 +1173,12 @@ picture {
   color: #ffffff;
 }
 
-/* line 78, src/scss/_components/common/_footer.scss */
+/* line 116, src/scss/_components/common/_footer.scss */
 .footer__nav a:not(:last-child) {
   margin-bottom: 10px;
 }
 
-/* line 83, src/scss/_components/common/_footer.scss */
+/* line 121, src/scss/_components/common/_footer.scss */
 .footer__nav a:hover:before, .footer__nav a:hover:after {
   width: 50%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -1135,7 +1186,7 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 90, src/scss/_components/common/_footer.scss */
+/* line 128, src/scss/_components/common/_footer.scss */
 .footer__nav a:before, .footer__nav a:after {
   content: '';
   position: absolute;
@@ -1148,17 +1199,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 101, src/scss/_components/common/_footer.scss */
+/* line 139, src/scss/_components/common/_footer.scss */
 .footer__nav a:before {
   left: 50%;
 }
 
-/* line 104, src/scss/_components/common/_footer.scss */
+/* line 142, src/scss/_components/common/_footer.scss */
 .footer__nav a:after {
   right: 50%;
 }
 
-/* line 110, src/scss/_components/common/_footer.scss */
+/* line 148, src/scss/_components/common/_footer.scss */
 .footer__address {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1171,7 +1222,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 114, src/scss/_components/common/_footer.scss */
+/* line 152, src/scss/_components/common/_footer.scss */
 .footer__address p {
   font-weight: 700;
   font-size: 16px;
@@ -1179,14 +1230,14 @@ picture {
   line-height: 25px;
 }
 
-/* line 121, src/scss/_components/common/_footer.scss */
+/* line 159, src/scss/_components/common/_footer.scss */
 .footer__address span {
   font-size: 16px;
   color: #ffffff;
   line-height: 25px;
 }
 
-/* line 127, src/scss/_components/common/_footer.scss */
+/* line 165, src/scss/_components/common/_footer.scss */
 .footer__address a {
   position: relative;
   display: -webkit-box;
@@ -1198,12 +1249,12 @@ picture {
   line-height: 25px;
 }
 
-/* line 134, src/scss/_components/common/_footer.scss */
+/* line 172, src/scss/_components/common/_footer.scss */
 .footer__address a:first-of-type {
   color: #efc02f;
 }
 
-/* line 140, src/scss/_components/common/_footer.scss */
+/* line 178, src/scss/_components/common/_footer.scss */
 .footer__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1223,7 +1274,7 @@ picture {
   margin-left: auto;
 }
 
-/* line 148, src/scss/_components/common/_footer.scss */
+/* line 186, src/scss/_components/common/_footer.scss */
 .footer__form-title {
   padding-bottom: 35px;
   font-size: 30px;
@@ -1233,7 +1284,7 @@ picture {
   text-align: right;
 }
 
-/* line 157, src/scss/_components/common/_footer.scss */
+/* line 195, src/scss/_components/common/_footer.scss */
 .footer__form-info {
   display: block;
   text-align: right;
@@ -1241,7 +1292,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 164, src/scss/_components/common/_footer.scss */
+/* line 202, src/scss/_components/common/_footer.scss */
 .footer__form label {
   position: relative;
   display: -webkit-box;
@@ -1252,7 +1303,7 @@ picture {
   margin-bottom: 25px;
 }
 
-/* line 170, src/scss/_components/common/_footer.scss */
+/* line 208, src/scss/_components/common/_footer.scss */
 .footer__form label input {
   outline: none;
   position: relative;
@@ -1298,13 +1349,13 @@ picture {
   font-size: 16px;
 }
 
-/* line 187, src/scss/_components/common/_footer.scss */
+/* line 225, src/scss/_components/common/_footer.scss */
 .footer__form label .c-btn {
   border-color: #00a89c;
   background-color: #00a89c;
 }
 
-/* line 191, src/scss/_components/common/_footer.scss */
+/* line 229, src/scss/_components/common/_footer.scss */
 .footer__form label .c-btn:hover {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
@@ -1313,7 +1364,7 @@ picture {
   background-color: #00c2b4;
 }
 
-/* line 197, src/scss/_components/common/_footer.scss */
+/* line 235, src/scss/_components/common/_footer.scss */
 .footer__form label .c-btn__wrapper {
   position: absolute;
   top: 0;
@@ -1359,7 +1410,51 @@ picture {
 }
 
 /* line 30, src/scss/_components/homepage/_main.scss */
-.main__bg > div {
+.main__bg-branch {
+  z-index: 3;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 39, src/scss/_components/homepage/_main.scss */
+.main__bg-branch img {
+  opacity: 0.08;
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 46, src/scss/_components/homepage/_main.scss */
+.main__bg-branch img:nth-of-type(1) {
+  left: 0;
+  bottom: 0;
+}
+
+/* line 50, src/scss/_components/homepage/_main.scss */
+.main__bg-branch img:nth-of-type(2) {
+  left: 25%;
+  bottom: 200px;
+}
+
+/* line 54, src/scss/_components/homepage/_main.scss */
+.main__bg-branch img:nth-of-type(3) {
+  left: 50%;
+  bottom: 100px;
+}
+
+/* line 58, src/scss/_components/homepage/_main.scss */
+.main__bg-branch img:nth-of-type(4) {
+  bottom: 0;
+  right: 0;
+}
+
+/* line 65, src/scss/_components/homepage/_main.scss */
+.main__bg-visual {
   z-index: 2;
   position: absolute;
   top: 0;
@@ -1371,8 +1466,19 @@ picture {
   background-position: left 300px;
 }
 
-/* line 41, src/scss/_components/homepage/_main.scss */
-.main__bg > div img {
+/* line 77, src/scss/_components/homepage/_main.scss */
+.main__bg-product {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 85, src/scss/_components/homepage/_main.scss */
+.main__bg-product img {
+  z-index: 5;
   position: absolute;
   bottom: 30px;
   right: 50px;
@@ -1381,7 +1487,7 @@ picture {
   height: auto;
 }
 
-/* line 51, src/scss/_components/homepage/_main.scss */
+/* line 96, src/scss/_components/homepage/_main.scss */
 .main__bg:after {
   content: '';
   z-index: -1;
@@ -1393,7 +1499,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 63, src/scss/_components/homepage/_main.scss */
+/* line 108, src/scss/_components/homepage/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
@@ -1401,7 +1507,7 @@ picture {
   padding-bottom: 100px;
 }
 
-/* line 70, src/scss/_components/homepage/_main.scss */
+/* line 115, src/scss/_components/homepage/_main.scss */
 .main__title {
   padding-bottom: 50px;
   font-size: 60px;
@@ -1409,7 +1515,7 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 77, src/scss/_components/homepage/_main.scss */
+/* line 122, src/scss/_components/homepage/_main.scss */
 .main__subtitle {
   padding-bottom: 25px;
   font-size: 30px;
@@ -1417,7 +1523,7 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 84, src/scss/_components/homepage/_main.scss */
+/* line 129, src/scss/_components/homepage/_main.scss */
 .main__desc {
   padding-bottom: 50px;
   font-size: 25px;
@@ -2046,6 +2152,7 @@ picture {
 
 /* line 8, src/scss/_components/homepage/_product.scss */
 .product__bg {
+  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -2053,16 +2160,16 @@ picture {
   height: 100%;
 }
 
-/* line 15, src/scss/_components/homepage/_product.scss */
-.product__bg img {
+/* line 16, src/scss/_components/homepage/_product.scss */
+.product__bg > img {
   position: absolute;
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 21, src/scss/_components/homepage/_product.scss */
-.product__bg img:nth-of-type(1) {
+/* line 22, src/scss/_components/homepage/_product.scss */
+.product__bg > img:nth-of-type(1) {
   top: -webkit-calc(50% + 100px);
   top: calc(50% + 100px);
   -webkit-transform: translateY(-50%);
@@ -2071,13 +2178,50 @@ picture {
   left: 0;
 }
 
-/* line 26, src/scss/_components/homepage/_product.scss */
-.product__bg img:nth-of-type(2) {
+/* line 27, src/scss/_components/homepage/_product.scss */
+.product__bg > img:nth-of-type(2) {
   right: 0;
   bottom: 100px;
 }
 
 /* line 33, src/scss/_components/homepage/_product.scss */
+.product__bg-branch {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 41, src/scss/_components/homepage/_product.scss */
+.product__bg-branch img {
+  opacity: 0.08;
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 48, src/scss/_components/homepage/_product.scss */
+.product__bg-branch img:nth-of-type(1) {
+  top: 20%;
+  right: 0;
+}
+
+/* line 52, src/scss/_components/homepage/_product.scss */
+.product__bg-branch img:nth-of-type(2) {
+  top: -5%;
+  right: 15%;
+}
+
+/* line 56, src/scss/_components/homepage/_product.scss */
+.product__bg-branch img:nth-of-type(3) {
+  left: 40%;
+  top: 50%;
+}
+
+/* line 64, src/scss/_components/homepage/_product.scss */
 .product__wrapper {
   z-index: 2;
   position: relative;
@@ -2087,7 +2231,7 @@ picture {
   text-align: right;
 }
 
-/* line 42, src/scss/_components/homepage/_product.scss */
+/* line 73, src/scss/_components/homepage/_product.scss */
 .product__title {
   padding-bottom: 50px;
   text-transform: uppercase;
@@ -2095,7 +2239,7 @@ picture {
   font-weight: 700;
 }
 
-/* line 49, src/scss/_components/homepage/_product.scss */
+/* line 80, src/scss/_components/homepage/_product.scss */
 .product__desc {
   padding-bottom: 100px;
   font-size: 30px;
