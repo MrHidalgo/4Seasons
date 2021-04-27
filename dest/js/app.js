@@ -16,6 +16,32 @@
 * */
 
 /**
+ * @name initHamburger
+ *
+ * @description Init hamburger logic with animated
+ */
+var initHamburger = function initHamburger() {
+
+  var btn = document.querySelector("[hamburger-js]"),
+      hideScrollContainer = document.querySelectorAll("html, body"),
+      mobileContainer = document.querySelector("[mobile-block-js]");
+
+  /**
+    * @description
+   */
+  btn.addEventListener("click", function (ev) {
+    var elem = ev.currentTarget;
+
+    elem.classList.toggle("is-active");
+    mobileContainer.classList.toggle("is-open");
+
+    hideScrollContainer.forEach(function (val, idx) {
+      val.classList.toggle("is-hideScroll");
+    });
+  });
+};
+
+/**
  * @name initHeaderFixed
  *
  * @description Fixing the site header in the scrolling page.
@@ -164,6 +190,28 @@ var initPreventBehavior = function initPreventBehavior() {
         e.preventDefault();
       }
     });
+  });
+};
+
+/**
+ * @name initSmoothScroll
+ *
+ * @description Smooth transition to anchors to the block.
+ */
+var initSmoothScroll = function initSmoothScroll() {
+  var btnName = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[anchor-js]";
+  var animateSpeed = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1000;
+
+
+  $(btnName).on("click", function (e) {
+
+    var linkHref = $(e.currentTarget).attr('href'),
+        headerHeight = $(".header").outerHeight() || 0,
+        topHeightOffset = $(linkHref).offset().top - headerHeight;
+
+    $('body, html').animate({
+      scrollTop: topHeightOffset
+    }, animateSpeed);
   });
 };
 
@@ -362,6 +410,8 @@ window.addEventListener('scroll', function (ev) {
     // lib
     initSwiper();
     initPopups();
+    initSmoothScroll();
+    initHamburger();
     // ==========================================
 
     // callback

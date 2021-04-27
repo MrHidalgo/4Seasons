@@ -11,12 +11,11 @@ header#header.header
             img(src="img/logo.svg" alt="")
             img(src="img/logo--black.svg" alt="")
 
-      .header__wrapper-middle
+      .header__wrapper-middle(mobile-block-js)
 
         nav.header__nav
           a(href="#") LED GROW LIGHTS
-          a(href="#") DELIVERY
-          a(href="#") FAQs
+          a(href="#delivery" anchor-js) DELIVERY
           a(href="#") ABOUT US
           a(href="#") CONTACTS
 
@@ -24,6 +23,8 @@ header#header.header
 
         a.header__search(href="#" search-js)
           i.icon-font.icon-search
+
+        +hamburger()
 
   .header__search-wrapper(search-content-js)
     label

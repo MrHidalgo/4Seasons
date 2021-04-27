@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 90px;
+	@include adaptive(1023) {
+		padding-bottom: 50px;
+	}
 
 	&__bg {
 		position: absolute;
@@ -44,12 +47,19 @@
 			display: flex;
 			flex-wrap: wrap;
 			width: calc(100% + 95px);
+			@include adaptive(1023) {
+				left: -40px;
+				width: calc(100% + 40px);
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 3);
 				padding-left: 95px;
 				padding-bottom: 50px;
+				@include adaptive(1023) {
+					padding-left: 40px;
+				}
 			}
 		}
 

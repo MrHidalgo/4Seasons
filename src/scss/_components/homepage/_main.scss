@@ -46,6 +46,9 @@
 				&:nth-of-type(1) {
 					left: 0;
 					bottom: 0;
+					@include adaptive(1279) {
+						display: none !important;
+					}
 				}
 				&:nth-of-type(2) {
 					left: 25%;
@@ -58,6 +61,9 @@
 				&:nth-of-type(4) {
 					bottom: 0;
 					right: 0;
+					@include adaptive(1279) {
+						display: none !important;
+					}
 				}
 			}
 		}
@@ -72,15 +78,33 @@
 			background-image: url('../img/img-main-overlay.png');
 			background-repeat: no-repeat;
 			background-position: left 300px;
+			@include adaptive(1439) {
+				background-position: left 150px;
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 30%;
+					background-color: #ffffff;
+				}
+			}
 		}
 
 		&-product {
 			z-index: 5;
 			position: absolute;
 			top: 0;
-			left: 0;
+			right: 0;
 			width: 100%;
 			height: 100%;
+			@include adaptive(1279) {
+				display: flex;
+				align-items: center;
+				width: 50%;
+			}
 
 			img {
 				z-index: 5;
@@ -90,6 +114,11 @@
 				display: block;
 				max-width: 100%;
 				height: auto;
+				@include adaptive(1439) {
+					bottom: auto;
+					right: 25px;
+					max-width: 80%;
+				}
 			}
 		}
 
@@ -108,8 +137,22 @@
 	&__wrapper {
 		z-index: 2;
 		position: relative;
-		padding-top: 670px;
-		padding-bottom: 100px;
+		width: 100%;
+		padding-top: 600px;
+		padding-bottom: 170px;
+		@include adaptive(1919) {
+			max-width: 768px;
+		}
+		@include adaptive(1439) {
+			padding-top: 450px;
+		}
+		@include adaptive(1365) {
+			max-width: 650px;
+		}
+		@include adaptive(1279) {
+			max-width: 50%;
+			padding-bottom: 50px;
+		}
 	}
 
 	&__title {
@@ -117,6 +160,12 @@
 		font-size: 60px;
 		font-weight: 700;
 		color: #3c3c3c;
+		@include adaptive(1535) {
+			font-size: 50px;
+		}
+		@include adaptive(1365) {
+			font-size: 40px;
+		}
 	}
 
 	&__subtitle {
@@ -124,12 +173,18 @@
 		font-size: 30px;
 		font-weight: 700;
 		color: #3c3c3c;
+		@include adaptive(1365) {
+			font-size: 26px;
+		}
 	}
 
 	&__desc {
 		padding-bottom: 50px;
 		font-size: 25px;
 		color: #3c3c3c;
+		@include adaptive(1365) {
+			font-size: 22px;
+		}
 	}
 }
 

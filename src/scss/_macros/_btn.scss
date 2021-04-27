@@ -16,6 +16,10 @@
   border-radius: 2rem;
   background-color: #006470;
   @include transition(transform, border-color, box-shadow, background-color);
+  @include adaptive(1279) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   &:hover {
     transform: translateY(-2px);

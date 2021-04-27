@@ -81,6 +81,8 @@
 		// lib
 		initSwiper();
 		initPopups();
+		initSmoothScroll();
+		initHamburger();
 		// ==========================================
 
 		// callback

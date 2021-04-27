@@ -10,6 +10,8 @@
 	background-color: transparent;
 	@include transition(box-shadow, background-color);
 
+
+	.is-hideScroll &,
 	&.is-fixed {
 		box-shadow: 0 5px 15px 0 rgba(#000, 0.075);
 		background-color: rgba(#ffffff, 0.975);
@@ -33,6 +35,14 @@
 						}
 					}
 				}
+			}
+		}
+
+		.hamburger {
+			.hamburger-inner,
+			.hamburger-inner::before,
+			.hamburger-inner::after {
+				background-color: #000000;
 			}
 		}
 
@@ -62,6 +72,14 @@
 	.c-grid-fluid {
 		padding-left: 80px;
 		padding-right: 80px;
+		@include adaptive(1365) {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		@include adaptive(1279) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 
 	&__wrapper {
@@ -71,6 +89,10 @@
 		padding-top: 45px;
 		padding-bottom: 45px;
 		@include transition(padding-top, padding-bottom);
+		@include adaptive(1279) {
+			padding-top: 25px;
+			padding-bottom: 25px;
+		}
 
 		&-left,
 		&-right {
@@ -85,11 +107,51 @@
 			flex: 1;
 			min-width: 1px;
 			max-width: 100%;
+			@include adaptive(1279) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			@include adaptive(1023) {
+				z-index: 999;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(10px);
+				overflow-y: auto;
+				position: fixed;
+				top: 95px;
+				left: 0;
+				width: 100%;
+				height: calc(100% - 95px);
+				padding: 100px 50px 195px;
+				flex: unset;
+				flex-direction: column;
+				background-color: rgba(#ffffff, 0.975);
+				@include transition(opacity, visibility, transform);
+
+				&.is-open {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+					@include transition(opacity, visibility, transform);
+				}
+			}
 		}
 
 		&-right {
 			display: flex;
 			justify-content: flex-end;
+			@include adaptive(1279) {
+				width: auto;
+				max-width: unset;
+			}
+
+			.hamburger {
+				display: none;
+				margin-left: 15px;
+				@include adaptive(1023) {
+					display: flex;
+				}
+			}
 		}
 	}
 
@@ -97,6 +159,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include adaptive(1023) {
+		  flex-direction: column;
+		}
 
 		a {
 			outline: none;
@@ -110,6 +175,16 @@
 			font-weight: 600;
 			color: #ffffff;
 			@include transition(color);
+			@include adaptive(1279) {
+				margin-left: 20px;
+				margin-right: 20px;
+				font-size: 16px;
+			}
+			@include adaptive(1023) {
+				margin-left: 0;
+				margin-right: 0;
+				margin-bottom: 35px;
+			}
 
 			&:hover {
 				&:before,
@@ -127,6 +202,7 @@
 				width: 0;
 				height: 3px;
 				background-color: #00a79b;
+				border-radius: 4px;
 				@include transition(width);
 			}
 
@@ -160,6 +236,14 @@
 			transform-origin: center;
 			backface-visibility: hidden;
 			@include transition(opacity, visibility, transform);
+			@include adaptive(1365) {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include adaptive(1279) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 
 			&.is-open {
 				opacity: 1;
@@ -198,6 +282,10 @@
 				margin-left: 80px;
 				font-size: 25px;
 				color: #000000;
+				@include adaptive(1279) {
+					margin-left: 15px;
+					font-size: 22px;
+				}
 			}
 		}
 
@@ -205,6 +293,9 @@
 			font-size: 25px;
 			color: #ffffff;
 			@include transition(color);
+			@include adaptive(1279) {
+				font-size: 22px;
+			}
 		}
 	}
 }

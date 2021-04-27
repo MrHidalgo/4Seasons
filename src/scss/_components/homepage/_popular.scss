@@ -2,6 +2,9 @@
 
 .popular {
 	padding-bottom: 140px;
+	@include adaptive(1023) {
+		padding-bottom: 100px;
+	}
 
 	&__title {
 		text-align: center;
@@ -16,15 +19,24 @@
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(1023) {
+			flex-wrap: wrap;
+		}
 
 		&-left,
 		&-right {
 			width: 50%;
+			@include adaptive(1023) {
+				width: 100%;
+			}
 		}
 
 		&-right {
 			display: flex;
 			flex-direction: column;
+			@include adaptive(1023) {
+				padding-top: 30px;
+			}
 		}
 	}
 
