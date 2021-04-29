@@ -10,7 +10,6 @@
 	background-color: transparent;
 	@include transition(box-shadow, background-color);
 
-
 	.is-hideScroll &,
 	&.is-fixed {
 		box-shadow: 0 5px 15px 0 rgba(#000, 0.075);
@@ -51,6 +50,10 @@
 				padding-top: 25px;
 				padding-bottom: 25px;
 				@include transition(padding-top, padding-bottom);
+				@include adaptive(767) {
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
 			}
 
 			&__nav {
@@ -93,6 +96,10 @@
 			padding-top: 25px;
 			padding-bottom: 25px;
 		}
+		@include adaptive(767) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
 
 		&-left,
 		&-right {
@@ -127,6 +134,11 @@
 				flex-direction: column;
 				background-color: rgba(#ffffff, 0.975);
 				@include transition(opacity, visibility, transform);
+				@include adaptive(767) {
+					top: 75px;
+					height: calc(100% - 75px);
+					padding-bottom: 175px;
+				}
 
 				&.is-open {
 					opacity: 1;

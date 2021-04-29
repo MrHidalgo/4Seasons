@@ -11,9 +11,12 @@
 	&__bg {
 		position: absolute;
 		top: 0;
-		left: 0;
+		right: 0;
 		width: 100%;
 		height: 100%;
+		@include adaptive(767) {
+			width: 80%;
+		}
 
 		img {
 			position: absolute;
@@ -23,6 +26,9 @@
 			display: block;
 			max-width: 100%;
 			height: auto;
+			@include adaptive(767) {
+				top: 50%;
+			}
 		}
 	}
 
@@ -34,6 +40,9 @@
 	&__title {
 		padding-bottom: 50px;
 		text-align: center;
+		@include adaptive(767) {
+			padding-bottom: 30px;
+		}
 	}
 
 	&__box {
@@ -51,6 +60,10 @@
 				left: -40px;
 				width: calc(100% + 40px);
 			}
+			@include adaptive(767) {
+				left: 0;
+				width: 100%;
+			}
 
 			> div {
 				width: 100%;
@@ -59,6 +72,10 @@
 				padding-bottom: 50px;
 				@include adaptive(1023) {
 					padding-left: 40px;
+				}
+				@include adaptive(767) {
+					max-width: 100%;
+					padding-left: 0;
 				}
 			}
 		}
@@ -73,16 +90,26 @@
 			height: 120px;
 			border-radius: 50%;
 			background-color: #006470;
+			@include adaptive(767) {
+				width: 90px;
+				height: 90px;
+			}
 
 			.icon-font {
 				color: #ffffff;
 				font-size: 60px;
+				@include adaptive(767) {
+					font-size: 50px;
+				}
 			}
 		}
 
 		&-body {
 			padding-top: 50px;
 			text-align: center;
+			@include adaptive(767) {
+				padding-top: 30px;
+			}
 
 			p {
 				padding-bottom: 25px;
@@ -90,6 +117,10 @@
 				color: #3c3c3c;
 				font-size: 20px;
 				font-weight: 700;
+				@include adaptive(767) {
+					padding-bottom: 15px;
+					font-size: 16px;
+				}
 			}
 
 			span {

@@ -8,6 +8,9 @@
 	&__text {
 		font-size: 16px;
 		color: #ffffff;
+		@include adaptive(767) {
+			font-size: 12px;
+		}
 	}
 }
 

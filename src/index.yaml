@@ -3,7 +3,7 @@ ProjectTitle: 4Seasons
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 100
 - file: about.html
   titleName: About
   ready: 0
