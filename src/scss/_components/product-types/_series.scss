@@ -68,6 +68,9 @@
 				&:hover {
 					width: calc(calc(100% / 3) + 100px);
 					@include transition(width);
+					@include adaptive(1279) {
+						width: calc(100% / 3);
+					}
 				}
 			}
 		}
