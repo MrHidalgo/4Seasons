@@ -6,7 +6,7 @@ PageList:
   ready: 100
 - file: about.html
   titleName: About
-  ready: 0
+  ready: 55
 - file: product-types.html
   titleName: Product Types
   ready: 0

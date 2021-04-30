@@ -8,6 +8,56 @@
 	background-position: center top;
 	background-size: cover;
 
+	&.main--about {
+		.main {
+			&__bg {
+				&:after {
+					height: 200px;
+					@include adaptive(1365) {
+						height: 250px;
+					}
+					@include adaptive(1279) {
+						height: 200px;
+					}
+					@include adaptive(1023) {
+						height: 150px;
+					}
+				}
+
+				&-visual {
+					@include adaptive(1439) {
+						background-position: left 300px;
+
+						&:after {
+							height: 10%;
+						}
+					}
+					@include adaptive(1365) {
+					  background-size: contain;
+					}
+					@include adaptive(1279) {
+						background-position: left 250px;
+					}
+					@include adaptive(1023) {
+						background-position: left 155px;
+					}
+				}
+			}
+
+			&__wrapper {
+				padding-top: 540px;
+				@include adaptive(1279) {
+					padding-top: 400px;
+				}
+				@include adaptive(1023) {
+					max-width: 500px;
+					padding-top: 250px;
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+
 	&:after {
 		content: '';
 		z-index: 1;
@@ -181,6 +231,7 @@
 	}
 
 	&__title {
+		text-transform: uppercase;
 		padding-bottom: 50px;
 		font-size: 60px;
 		font-weight: 700;
