@@ -8,6 +8,10 @@
 	@include adaptive(1023) {
 		padding-top: 100px;
 	}
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 
 	&__wrapper {
 		z-index: 2;
@@ -86,9 +90,18 @@
 		}
 	}
 
+	&__title {
+		@include adaptive(767) {
+			text-align: center;
+		}
+	}
+
 	&__desc {
 		font-size: 16px;
 		color: #3c3c3c;
+		@include adaptive(767) {
+			text-align: center;
+		}
 
 		&:not(:last-of-type) {
 			padding-bottom: 25px;
@@ -97,6 +110,14 @@
 
 	&__btn {
 		padding-top: 25px;
+		@include adaptive(767) {
+			justify-content: center;
+
+			.c-btn {
+				width: 100%;
+				max-width: 200px;
+			}
+		}
 	}
 
 	&__visual {
@@ -134,12 +155,19 @@
 			padding-left: 30px;
 			padding-right: 30px;
 			border-bottom: 2px solid #3c3c3c;
+			@include adaptive(767) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 		}
 		
 		.icon-font {
 			margin-bottom: 15px;
 			font-size: 60px;
 			color: #006470;
+			@include adaptive(767) {
+				font-size: 50px;
+			}
 		}
 
 		span {

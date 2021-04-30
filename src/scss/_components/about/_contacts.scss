@@ -2,8 +2,15 @@
 
 .contacts {
 	padding-top: 100px;
+	@include adaptive(767) {
+		padding-top: 50px;
+	}
 
 	&__title {
+		@include adaptive(767) {
+			text-align: center;
+		}
+
 		&-1 {
 			text-align: center;
 		}
@@ -15,14 +22,25 @@
 		color: #3c3c3c;
 		text-align: center;
 		line-height: 1.8;
+		@include adaptive(767) {
+			br {
+				display: none;
+			}
+		}
 	}
 
 	&__wrapper {
 		display: flex;
+		@include adaptive(767) {
+			flex-wrap: wrap;
+		}
 
 		&-left {
 			width: 100%;
 			max-width: 300px;
+			@include adaptive(767) {
+				max-width: 100%;
+			}
 		}
 
 		&-right {
@@ -30,17 +48,31 @@
 			min-width: 1px;
 			max-width: 100%;
 			padding-left: 30px;
+			@include adaptive(767) {
+				padding-top: 30px;
+				padding-left: 0;
+			}
 		}
 	}
 
 	&__info {
 		display: flex;
 		flex-direction: column;
+		@include adaptive(767) {
+			align-items: center;
+			padding: 20px;
+			border: 2px solid #006470;
+			border-radius: 2rem;
+			background-color: #efefef;
+		}
 
 		> div {
 			display: flex;
 			align-items: flex-start;
 			flex-direction: column;
+			@include adaptive(767) {
+				align-items: center;
+			}
 
 			&:not(:last-of-type) {
 				padding-bottom: 30px;
@@ -118,6 +150,15 @@
 			}
 
 			.c-btn {
+				@include adaptive(767) {
+					width: 100%;
+					max-width: 200px;
+
+					&__wrapper {
+						justify-content: center;
+					}
+				}
+
 				span {
 					text-transform: uppercase;
 				}

@@ -8,6 +8,10 @@
 	@include adaptive(1023) {
 		padding-bottom: 50px;
 	}
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 0;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -51,6 +55,9 @@
 		text-align: center;
 		color: #ffffff;
 		font-size: 16px;
+		@include adaptive(767) {
+			padding-bottom: 50px;
+		}
 	}
 
 	&__block {
@@ -68,6 +75,9 @@
 				@include adaptive(1023) {
 					max-width: calc((100% - 30px) / 2);
 					padding-bottom: 50px;
+				}
+				@include adaptive(767) {
+					max-width: 100%;
 				}
 			}
 		}
@@ -106,6 +116,9 @@
 				text-align: center;
 				font-weight: 700;
 				font-size: 20px;
+				@include adaptive(767) {
+					font-size: 16px;
+				}
 
 				a {
 					color: #ffffff;
