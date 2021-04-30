@@ -212,6 +212,10 @@ var initSmoothScroll = function initSmoothScroll() {
     $('body, html').animate({
       scrollTop: topHeightOffset
     }, animateSpeed);
+
+    if ($(window).width() < 768) {
+      $('[hamburger-js]').trigger('click');
+    }
   });
 };
 

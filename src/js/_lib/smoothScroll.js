@@ -20,6 +20,9 @@ const initSmoothScroll = (
       scrollTop: topHeightOffset
     }, animateSpeed);
 
+    if($(window).width() < 768) {
+      $('[hamburger-js]').trigger('click');
+    }
   });
 
 };

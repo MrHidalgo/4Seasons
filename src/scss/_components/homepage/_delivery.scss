@@ -2,10 +2,13 @@
 
 .delivery {
 	position: relative;
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 90px;
 	@include adaptive(1023) {
 		padding-bottom: 50px;
+	}
+	@include adaptive(767) {
+		padding-top: 75px;
 	}
 
 	&__bg {
