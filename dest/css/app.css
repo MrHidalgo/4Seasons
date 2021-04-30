@@ -4862,16 +4862,20 @@ picture {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 61, src/scss/_components/about/_where.scss */
+/* line 62, src/scss/_components/about/_where.scss */
 .where__block-wrapper > div {
   width: 100%;
-  max-width: -webkit-calc((100% - 30px) / 4);
-  max-width: calc((100% - 30px) / 4);
+  max-width: -webkit-calc((100% - 60px) / 4);
+  max-width: calc((100% - 60px) / 4);
 }
 
-/* line 67, src/scss/_components/about/_where.scss */
+/* line 68, src/scss/_components/about/_where.scss */
 .where__block-head {
   overflow: hidden;
   position: relative;
@@ -4898,7 +4902,7 @@ picture {
   background-color: #000000;
 }
 
-/* line 82, src/scss/_components/about/_where.scss */
+/* line 83, src/scss/_components/about/_where.scss */
 .where__block-head img {
   display: block;
   max-width: 100%;
@@ -4907,12 +4911,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 91, src/scss/_components/about/_where.scss */
+/* line 92, src/scss/_components/about/_where.scss */
 .where__block-body {
   padding-top: 30px;
 }
 
-/* line 94, src/scss/_components/about/_where.scss */
+/* line 95, src/scss/_components/about/_where.scss */
 .where__block-body p {
   padding-bottom: 25px;
   color: #ffffff;
@@ -4922,18 +4926,226 @@ picture {
   font-size: 20px;
 }
 
-/* line 102, src/scss/_components/about/_where.scss */
+/* line 103, src/scss/_components/about/_where.scss */
 .where__block-body p a {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* line 108, src/scss/_components/about/_where.scss */
+/* line 109, src/scss/_components/about/_where.scss */
 .where__block-body span {
   display: block;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
+}
+
+/* line 3, src/scss/_components/about/_contacts.scss */
+.contacts {
+  padding-top: 100px;
+}
+
+/* line 7, src/scss/_components/about/_contacts.scss */
+.contacts__title-1 {
+  text-align: center;
+}
+
+/* line 12, src/scss/_components/about/_contacts.scss */
+.contacts__desc {
+  padding-bottom: 50px;
+  font-size: 16px;
+  color: #3c3c3c;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* line 20, src/scss/_components/about/_contacts.scss */
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 23, src/scss/_components/about/_contacts.scss */
+.contacts__wrapper-left {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* line 28, src/scss/_components/about/_contacts.scss */
+.contacts__wrapper-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-left: 30px;
+}
+
+/* line 36, src/scss/_components/about/_contacts.scss */
+.contacts__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 40, src/scss/_components/about/_contacts.scss */
+.contacts__info > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 45, src/scss/_components/about/_contacts.scss */
+.contacts__info > div:not(:last-of-type) {
+  padding-bottom: 30px;
+}
+
+/* line 50, src/scss/_components/about/_contacts.scss */
+.contacts__info-title {
+  font-weight: 700;
+  color: #3c3c3c;
+  font-size: 16px;
+}
+
+/* line 56, src/scss/_components/about/_contacts.scss */
+.contacts__info a,
+.contacts__info span {
+  display: block;
+  color: #3c3c3c;
+  font-size: 16px;
+}
+
+/* line 62, src/scss/_components/about/_contacts.scss */
+.contacts__info a strong,
+.contacts__info span strong {
+  font-weight: 700;
+}
+
+/* line 68, src/scss/_components/about/_contacts.scss */
+.contacts__info a:hover {
+  color: #006470;
+  text-decoration: underline;
+}
+
+/* line 75, src/scss/_components/about/_contacts.scss */
+.contacts__form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+/* line 80, src/scss/_components/about/_contacts.scss */
+.contacts__form-field {
+  position: relative;
+  width: 100%;
+}
+
+/* line 84, src/scss/_components/about/_contacts.scss */
+.contacts__form-field:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+/* line 88, src/scss/_components/about/_contacts.scss */
+.contacts__form-field label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+/* line 92, src/scss/_components/about/_contacts.scss */
+.contacts__form-field label input,
+.contacts__form-field label textarea {
+  outline: none;
+  position: relative;
+  width: 100%;
+  border: 2px solid #006470;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  background-color: #efefef;
+  font-size: 16px;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.contacts__form-field label input.placeholder,
+.contacts__form-field label textarea.placeholder {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.contacts__form-field label input:-moz-placeholder,
+.contacts__form-field label textarea:-moz-placeholder {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.contacts__form-field label input::-moz-placeholder,
+.contacts__form-field label textarea::-moz-placeholder {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.contacts__form-field label input:-ms-input-placeholder,
+.contacts__form-field label textarea:-ms-input-placeholder {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.contacts__form-field label input::-webkit-input-placeholder,
+.contacts__form-field label textarea::-webkit-input-placeholder {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+/* line 108, src/scss/_components/about/_contacts.scss */
+.contacts__form-field label input {
+  height: 60px;
+  padding: 0 20px;
+}
+
+/* line 113, src/scss/_components/about/_contacts.scss */
+.contacts__form-field label textarea {
+  resize: none;
+  height: 150px;
+  padding: 20px;
+}
+
+/* line 121, src/scss/_components/about/_contacts.scss */
+.contacts__form-field .c-btn span {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

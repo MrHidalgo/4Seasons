@@ -1,0 +1,129 @@
+// SECTION :: START
+
+.contacts {
+	padding-top: 100px;
+
+	&__title {
+		&-1 {
+			text-align: center;
+		}
+	}
+
+	&__desc {
+		padding-bottom: 50px;
+		font-size: 16px;
+		color: #3c3c3c;
+		text-align: center;
+		line-height: 1.8;
+	}
+
+	&__wrapper {
+		display: flex;
+
+		&-left {
+			width: 100%;
+			max-width: 300px;
+		}
+
+		&-right {
+			flex: 1;
+			min-width: 1px;
+			max-width: 100%;
+			padding-left: 30px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+
+		> div {
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+
+			&:not(:last-of-type) {
+				padding-bottom: 30px;
+			}
+		}
+
+		&-title {
+			font-weight: 700;
+			color: #3c3c3c;
+			font-size: 16px;
+		}
+
+		a,
+		span {
+			display: block;
+			color: #3c3c3c;
+			font-size: 16px;
+
+			strong {
+				font-weight: 700;
+			}
+		}
+
+		a {
+			&:hover {
+				color: #006470;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		&-field {
+			position: relative;
+			width: 100%;
+
+			&:not(:last-of-type) {
+				margin-bottom: 30px;
+			}
+
+			label {
+				display: flex;
+				width: 100%;
+
+				input,
+				textarea {
+					outline: none;
+					position: relative;
+					width: 100%;
+					border: 2px solid #006470;
+					box-shadow: none;
+					border-radius: 2rem;
+					background-color: #efefef;
+					font-size: 16px;
+					@include inputPlaceholder {
+						color: #b0b0b0;
+						font-size: 16px;
+					}
+				}
+
+				input {
+					height: 60px;
+					padding: 0 20px;
+				}
+
+				textarea {
+					resize: none;
+					height: 150px;
+					padding: 20px;
+				}
+			}
+
+			.c-btn {
+				span {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+// SECTION :: END

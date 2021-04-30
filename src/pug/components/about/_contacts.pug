@@ -1,0 +1,42 @@
+// SECTION :: START
+
+section#contacts.contacts
+  .c-grid
+
+    p.contacts__title.contacts__title-1.c-title any questions? contact us
+    p.contacts__desc If you have any questions or need a consultation, contact us or fill out the feedback form below. <br>We will be glad to help you get the answers you need. <br>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals
+
+    .contacts__wrapper
+      .contacts__wrapper-left
+
+        p.contacts__title.contacts__title-2.c-title GET IN TOUCH
+
+        .contacts__info
+          div
+            p.contacts__info-title Phone number
+            a(href="tel:050844372257") 0508 4 4372257
+          div
+            p.contacts__info-title E-Mail
+            a(href="mailto:contact@4seasongrowlights.com") contact@4seasongrowlights.com
+          div
+            p.contacts__info-title Address
+            span!= "<strong>4Season Grow Lights Ltd</strong> <br>153 Hepburn Road, Glenden <br>Auckland 0602, New Zealand"
+
+      .contacts__wrapper-right
+
+        form.contacts__form(action='' method='' autocomplete='off')
+          .contacts__form-field
+            label
+              input(type='text' name='' placeholder='Your Name' required)
+          .contacts__form-field
+            label
+              input(type='email' name='' placeholder='Email' required)
+          .contacts__form-field
+            label
+              textarea(placeholder='Messages')
+          .contacts__form-field
+            .c-btn__wrapper.c-btn__wrapper--end
+              button.c-btn(type='button')
+                span Send
+
+// SECTION :: END

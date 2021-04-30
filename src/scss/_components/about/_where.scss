@@ -57,10 +57,11 @@
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: space-between;
 
 			> div {
 				width: 100%;
-				max-width: calc((100% - 30px) / 4);
+				max-width: calc((100% - 60px) / 4);
 			}
 		}
 
