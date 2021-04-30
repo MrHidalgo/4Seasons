@@ -10,6 +10,9 @@
 	&__wrapper {
 		&-1 {
 			padding-bottom: 150px;
+			@include adaptive(767) {
+				padding-bottom: 50px;
+			}
 		}
 
 		&-2 {}
@@ -20,6 +23,10 @@
 		padding-right: 20px;
 		margin-bottom: 20px;
 		border-bottom: 2px solid #006470;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	&__subtitle.c-title {
@@ -33,6 +40,12 @@
 		font-size: 16px;
 		line-height: 28px;
 		color: #3c3c3c;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 14px;
+			line-height: 1.5;
+		}
 
 		a {
 			color: #006470;
@@ -53,17 +66,32 @@
 		padding: 40px 40px 200px;
 		height: 100%;
 		background-color: #f3f3f3;
+		@include adaptive(767) {
+			padding-bottom: 150px;
+		}
 
 		&-wrapper {
 			position: relative;
 			left: -20px;
 			display: flex;
 			width: calc(100% + 20px);
+			@include adaptive(767) {
+				left: 0;
+				flex-wrap: wrap;
+				width: 100%;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
 
 			> div {
 				width: calc(100% / 3);
 				padding-left: 20px;
 				@include transition(width);
+				@include adaptive(767) {
+					width: 100%;
+					padding-left: 0;
+					padding-bottom: 75px;
+				}
 
 				&:hover {
 					width: calc(calc(100% / 3) + 100px);
@@ -105,6 +133,9 @@
 			display: block;
 			max-width: 100%;
 			height: auto;
+			@include adaptive(767) {
+				max-width: 75%;
+			}
 		}
 	}
 }

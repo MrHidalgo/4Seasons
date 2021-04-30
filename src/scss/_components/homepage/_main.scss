@@ -20,7 +20,7 @@
 						height: 150px;
 					}
 					@include adaptive(767) {
-						height: calc(100% - 375px);
+						//height: calc(100% - 375px);
 					}
 				}
 
@@ -59,6 +59,16 @@
 				}
 				@include adaptive(767) {
 					padding-top: 210px;
+				}
+			}
+		}
+	}
+
+	&.main--prouct-types {
+		.main {
+			&__title {
+				@include adaptive(767) {
+					max-width: 75%;
 				}
 			}
 		}

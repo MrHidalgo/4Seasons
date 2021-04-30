@@ -2035,14 +2035,6 @@ picture {
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 11, src/scss/_components/homepage/_main.scss */
-  .main.main--prouct-types .main__bg:after, .main.main--about .main__bg:after {
-    height: -webkit-calc(100% - 375px);
-    height: calc(100% - 375px);
-  }
-}
-
 @media screen and (max-width: 1439px) {
   /* line 27, src/scss/_components/homepage/_main.scss */
   .main.main--prouct-types .main__bg-visual, .main.main--about .main__bg-visual {
@@ -2107,7 +2099,14 @@ picture {
   }
 }
 
-/* line 67, src/scss/_components/homepage/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 69, src/scss/_components/homepage/_main.scss */
+  .main.main--prouct-types .main__title {
+    max-width: 75%;
+  }
+}
+
+/* line 77, src/scss/_components/homepage/_main.scss */
 .main:after {
   content: '';
   z-index: 1;
@@ -2122,7 +2121,7 @@ picture {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* line 78, src/scss/_components/homepage/_main.scss */
+/* line 88, src/scss/_components/homepage/_main.scss */
 .main__img {
   z-index: 0;
   position: absolute;
@@ -2132,7 +2131,7 @@ picture {
   height: 80%;
 }
 
-/* line 91, src/scss/_components/homepage/_main.scss */
+/* line 101, src/scss/_components/homepage/_main.scss */
 .main__bg {
   z-index: 0;
   overflow: hidden;
@@ -2143,7 +2142,7 @@ picture {
   height: 100%;
 }
 
-/* line 100, src/scss/_components/homepage/_main.scss */
+/* line 110, src/scss/_components/homepage/_main.scss */
 .main__bg-branch {
   z-index: 3;
   position: absolute;
@@ -2154,7 +2153,7 @@ picture {
   height: 100%;
 }
 
-/* line 109, src/scss/_components/homepage/_main.scss */
+/* line 119, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img {
   opacity: 0.08;
   position: absolute;
@@ -2163,45 +2162,45 @@ picture {
   height: auto;
 }
 
-/* line 116, src/scss/_components/homepage/_main.scss */
+/* line 126, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(1) {
   left: 0;
   bottom: 0;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 116, src/scss/_components/homepage/_main.scss */
+  /* line 126, src/scss/_components/homepage/_main.scss */
   .main__bg-branch img:nth-of-type(1) {
     display: none !important;
   }
 }
 
-/* line 123, src/scss/_components/homepage/_main.scss */
+/* line 133, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(2) {
   left: 25%;
   bottom: 200px;
 }
 
-/* line 127, src/scss/_components/homepage/_main.scss */
+/* line 137, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(3) {
   left: 50%;
   bottom: 100px;
 }
 
-/* line 131, src/scss/_components/homepage/_main.scss */
+/* line 141, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(4) {
   bottom: 0;
   right: 0;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 131, src/scss/_components/homepage/_main.scss */
+  /* line 141, src/scss/_components/homepage/_main.scss */
   .main__bg-branch img:nth-of-type(4) {
     display: none !important;
   }
 }
 
-/* line 141, src/scss/_components/homepage/_main.scss */
+/* line 151, src/scss/_components/homepage/_main.scss */
 .main__bg-visual {
   z-index: 2;
   position: absolute;
@@ -2215,11 +2214,11 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 141, src/scss/_components/homepage/_main.scss */
+  /* line 151, src/scss/_components/homepage/_main.scss */
   .main__bg-visual {
     background-position: left 150px;
   }
-  /* line 154, src/scss/_components/homepage/_main.scss */
+  /* line 164, src/scss/_components/homepage/_main.scss */
   .main__bg-visual:after {
     content: '';
     position: absolute;
@@ -2232,7 +2231,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 141, src/scss/_components/homepage/_main.scss */
+  /* line 151, src/scss/_components/homepage/_main.scss */
   .main__bg-visual {
     top: 175px;
     height: 200px;
@@ -2240,13 +2239,13 @@ picture {
     -webkit-background-size: cover;
             background-size: cover;
   }
-  /* line 170, src/scss/_components/homepage/_main.scss */
+  /* line 180, src/scss/_components/homepage/_main.scss */
   .main__bg-visual:after {
     display: none;
   }
 }
 
-/* line 176, src/scss/_components/homepage/_main.scss */
+/* line 186, src/scss/_components/homepage/_main.scss */
 .main__bg-product {
   z-index: 5;
   position: absolute;
@@ -2257,7 +2256,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 176, src/scss/_components/homepage/_main.scss */
+  /* line 186, src/scss/_components/homepage/_main.scss */
   .main__bg-product {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2272,7 +2271,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 176, src/scss/_components/homepage/_main.scss */
+  /* line 186, src/scss/_components/homepage/_main.scss */
   .main__bg-product {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -2283,7 +2282,7 @@ picture {
   }
 }
 
-/* line 194, src/scss/_components/homepage/_main.scss */
+/* line 204, src/scss/_components/homepage/_main.scss */
 .main__bg-product img {
   z-index: 5;
   position: absolute;
@@ -2295,7 +2294,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 194, src/scss/_components/homepage/_main.scss */
+  /* line 204, src/scss/_components/homepage/_main.scss */
   .main__bg-product img {
     bottom: auto;
     right: 25px;
@@ -2304,13 +2303,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 194, src/scss/_components/homepage/_main.scss */
+  /* line 204, src/scss/_components/homepage/_main.scss */
   .main__bg-product img {
     right: 0;
   }
 }
 
-/* line 213, src/scss/_components/homepage/_main.scss */
+/* line 223, src/scss/_components/homepage/_main.scss */
 .main__bg:after {
   content: '';
   z-index: -1;
@@ -2323,14 +2322,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 213, src/scss/_components/homepage/_main.scss */
+  /* line 223, src/scss/_components/homepage/_main.scss */
   .main__bg:after {
     height: -webkit-calc(100% - 375px);
     height: calc(100% - 375px);
   }
 }
 
-/* line 228, src/scss/_components/homepage/_main.scss */
+/* line 238, src/scss/_components/homepage/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
@@ -2341,21 +2340,21 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 228, src/scss/_components/homepage/_main.scss */
+  /* line 238, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     padding-top: 450px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 228, src/scss/_components/homepage/_main.scss */
+  /* line 238, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     max-width: 650px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 228, src/scss/_components/homepage/_main.scss */
+  /* line 238, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     max-width: 50%;
     padding-bottom: 50px;
@@ -2363,7 +2362,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 228, src/scss/_components/homepage/_main.scss */
+  /* line 238, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     max-width: 100%;
     padding-top: 310px;
@@ -2371,7 +2370,7 @@ picture {
   }
 }
 
-/* line 252, src/scss/_components/homepage/_main.scss */
+/* line 262, src/scss/_components/homepage/_main.scss */
 .main__title {
   text-transform: uppercase;
   padding-bottom: 50px;
@@ -2381,21 +2380,21 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 252, src/scss/_components/homepage/_main.scss */
+  /* line 262, src/scss/_components/homepage/_main.scss */
   .main__title {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 252, src/scss/_components/homepage/_main.scss */
+  /* line 262, src/scss/_components/homepage/_main.scss */
   .main__title {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 252, src/scss/_components/homepage/_main.scss */
+  /* line 262, src/scss/_components/homepage/_main.scss */
   .main__title {
     width: 100%;
     max-width: 50%;
@@ -2404,7 +2403,7 @@ picture {
   }
 }
 
-/* line 272, src/scss/_components/homepage/_main.scss */
+/* line 282, src/scss/_components/homepage/_main.scss */
 .main__subtitle {
   padding-bottom: 25px;
   font-size: 30px;
@@ -2413,21 +2412,21 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 272, src/scss/_components/homepage/_main.scss */
+  /* line 282, src/scss/_components/homepage/_main.scss */
   .main__subtitle {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 272, src/scss/_components/homepage/_main.scss */
+  /* line 282, src/scss/_components/homepage/_main.scss */
   .main__subtitle {
     padding-bottom: 15px;
     font-size: 20px;
   }
 }
 
-/* line 286, src/scss/_components/homepage/_main.scss */
+/* line 296, src/scss/_components/homepage/_main.scss */
 .main__desc {
   padding-bottom: 50px;
   font-size: 25px;
@@ -2435,14 +2434,14 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 286, src/scss/_components/homepage/_main.scss */
+  /* line 296, src/scss/_components/homepage/_main.scss */
   .main__desc {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 286, src/scss/_components/homepage/_main.scss */
+  /* line 296, src/scss/_components/homepage/_main.scss */
   .main__desc {
     padding-bottom: 30px;
     font-size: 16px;
@@ -2450,14 +2449,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 299, src/scss/_components/homepage/_main.scss */
+  /* line 309, src/scss/_components/homepage/_main.scss */
   .main__btn {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 303, src/scss/_components/homepage/_main.scss */
+  /* line 313, src/scss/_components/homepage/_main.scss */
   .main__btn .c-btn {
     width: 100%;
     max-width: 200px;
@@ -5834,7 +5833,14 @@ picture {
   padding-bottom: 150px;
 }
 
-/* line 18, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 11, src/scss/_components/product-types/_series.scss */
+  .series__wrapper-1 {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 21, src/scss/_components/product-types/_series.scss */
 .series__header {
   padding-left: 20px;
   padding-right: 20px;
@@ -5842,12 +5848,20 @@ picture {
   border-bottom: 2px solid #006470;
 }
 
-/* line 25, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/product-types/_series.scss */
+  .series__header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 32, src/scss/_components/product-types/_series.scss */
 .series__subtitle.c-title {
   padding-bottom: 0;
 }
 
-/* line 29, src/scss/_components/product-types/_series.scss */
+/* line 36, src/scss/_components/product-types/_series.scss */
 .series__desc {
   padding-left: 20px;
   padding-right: 20px;
@@ -5857,19 +5871,29 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 37, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 36, src/scss/_components/product-types/_series.scss */
+  .series__desc {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* line 50, src/scss/_components/product-types/_series.scss */
 .series__desc a {
   color: #006470;
   font-weight: 600;
 }
 
-/* line 43, src/scss/_components/product-types/_series.scss */
+/* line 56, src/scss/_components/product-types/_series.scss */
 .series__section {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 48, src/scss/_components/product-types/_series.scss */
+/* line 61, src/scss/_components/product-types/_series.scss */
 .series__box {
   cursor: pointer;
   position: relative;
@@ -5880,7 +5904,14 @@ picture {
   background-color: #f3f3f3;
 }
 
-/* line 57, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 61, src/scss/_components/product-types/_series.scss */
+  .series__box {
+    padding-bottom: 150px;
+  }
+}
+
+/* line 73, src/scss/_components/product-types/_series.scss */
 .series__box-wrapper {
   position: relative;
   left: -20px;
@@ -5892,7 +5923,20 @@ picture {
   width: calc(100% + 20px);
 }
 
-/* line 63, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 73, src/scss/_components/product-types/_series.scss */
+  .series__box-wrapper {
+    left: 0;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* line 86, src/scss/_components/product-types/_series.scss */
 .series__box-wrapper > div {
   width: -webkit-calc(100% / 3);
   width: calc(100% / 3);
@@ -5902,7 +5946,16 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 68, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 86, src/scss/_components/product-types/_series.scss */
+  .series__box-wrapper > div {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 96, src/scss/_components/product-types/_series.scss */
 .series__box-wrapper > div:hover {
   width: -webkit-calc(-webkit-calc(100% / 3) + 100px);
   width: calc(calc(100% / 3) + 100px);
@@ -5912,14 +5965,14 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 68, src/scss/_components/product-types/_series.scss */
+  /* line 96, src/scss/_components/product-types/_series.scss */
   .series__box-wrapper > div:hover {
     width: -webkit-calc(100% / 3);
     width: calc(100% / 3);
   }
 }
 
-/* line 78, src/scss/_components/product-types/_series.scss */
+/* line 106, src/scss/_components/product-types/_series.scss */
 .series__box-title {
   padding-bottom: 25px;
   font-weight: 700;
@@ -5928,20 +5981,20 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 86, src/scss/_components/product-types/_series.scss */
+/* line 114, src/scss/_components/product-types/_series.scss */
 .series__box-desc {
   padding-bottom: 25px;
   font-size: 16px;
   color: #3c3c3c;
 }
 
-/* line 93, src/scss/_components/product-types/_series.scss */
+/* line 121, src/scss/_components/product-types/_series.scss */
 .series__box .c-btn__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 99, src/scss/_components/product-types/_series.scss */
+/* line 127, src/scss/_components/product-types/_series.scss */
 .series__box img {
   z-index: 0;
   position: absolute;
@@ -5953,6 +6006,13 @@ picture {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 127, src/scss/_components/product-types/_series.scss */
+  .series__box img {
+    max-width: 75%;
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */
