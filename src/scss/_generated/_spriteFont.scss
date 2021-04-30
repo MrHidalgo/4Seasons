@@ -39,35 +39,47 @@
 	@if $filename == guarantee {
 		$char: "\E004";
 	}
-	@if $filename == package {
+	@if $filename == manufacture {
 		$char: "\E005";
 	}
-	@if $filename == play {
+	@if $filename == package {
 		$char: "\E006";
 	}
-	@if $filename == search {
+	@if $filename == planting {
 		$char: "\E007";
 	}
-	@if $filename == star-full {
+	@if $filename == play {
 		$char: "\E008";
 	}
-	@if $filename == star-half {
+	@if $filename == production {
 		$char: "\E009";
 	}
-	@if $filename == star {
+	@if $filename == search {
 		$char: "\E00A";
 	}
-	@if $filename == twitter {
+	@if $filename == solution {
 		$char: "\E00B";
 	}
-	@if $filename == whatsapp {
+	@if $filename == star-full {
 		$char: "\E00C";
 	}
-	@if $filename == work-done {
+	@if $filename == star-half {
 		$char: "\E00D";
 	}
-	@if $filename == zoom-in {
+	@if $filename == star {
 		$char: "\E00E";
+	}
+	@if $filename == twitter {
+		$char: "\E00F";
+	}
+	@if $filename == whatsapp {
+		$char: "\E010";
+	}
+	@if $filename == work-done {
+		$char: "\E011";
+	}
+	@if $filename == zoom-in {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -100,16 +112,32 @@
 	@include icon(guarantee);
 
 }
+.icon-manufacture {
+	@include icon(manufacture);
+
+}
 .icon-package {
 	@include icon(package);
+
+}
+.icon-planting {
+	@include icon(planting);
 
 }
 .icon-play {
 	@include icon(play);
 
 }
+.icon-production {
+	@include icon(production);
+
+}
 .icon-search {
 	@include icon(search);
+
+}
+.icon-solution {
+	@include icon(solution);
 
 }
 .icon-star-full {

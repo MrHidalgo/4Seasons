@@ -7,3 +7,6 @@ PageList:
 - file: about.html
   titleName: About
   ready: 0
+- file: product-types.html
+  titleName: Product Types
+  ready: 0

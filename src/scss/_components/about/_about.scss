@@ -1,0 +1,139 @@
+// SECTION :: START
+
+.about {
+	overflow: hidden;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 100px;
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+		display: flex;
+		align-items: center;
+
+		&-1 {
+			.about__wrapper-right {
+				padding-left: 80px;
+			}
+		}
+		&-2 {
+			.about__wrapper-left {
+				padding-right: 80px;
+			}
+		}
+
+		&:not(:last-of-type) {
+			padding-bottom: 100px;
+		}
+
+		&-left,
+		&-right {
+			width: 50%;
+		}
+	}
+
+	&__media {
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+
+		&:after {
+			content: '';
+			z-index: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(40px, -40px);
+			width: 100%;
+			height: 100%;
+			background-color: #f3f3f3;
+		}
+
+		&-wrapper {
+			display: flex;
+		}
+
+		img {
+			z-index: 2;
+			position: relative;
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__desc {
+		font-size: 16px;
+		color: #3c3c3c;
+
+		&:not(:last-of-type) {
+			padding-bottom: 25px;
+		}
+	}
+
+	&__btn {
+		padding-top: 25px;
+	}
+
+	&__visual {
+		position: relative;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		margin-top: 50px;
+
+		&-line {
+			position: absolute;
+			bottom: 0;
+			height: 2px;
+			background-color: #3c3c3c;
+
+			&-1 {
+				left: 20px;
+				transform: translateX(-100%);
+			}
+			&-2 {
+				right: 20px;
+				transform: translateX(100%);
+			}
+		}
+
+		&-col {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			padding-left: 30px;
+			padding-right: 30px;
+			border-bottom: 2px solid #3c3c3c;
+		}
+		
+		.icon-font {
+			margin-bottom: 15px;
+			font-size: 60px;
+			color: #006470;
+		}
+
+		span {
+			display: block;
+			width: 10px;
+			height: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 50%;
+			background-color: #3c3c3c;
+		}
+
+		u {
+			display: block;
+			width: 2px;
+			height: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #3c3c3c;
+			text-decoration: none;
+		}
+	}
+}
+
+// SECTION :: END

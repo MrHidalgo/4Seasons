@@ -63,6 +63,26 @@
 			return tl;
 		}
 	};
+	
+	
+	const aboutLine = () => {
+		function helperCalcLinePosition() {
+			if($('.about').length > 0) {
+				$('.about__visual-line-1').css({
+					width: $('.about__visual-col--first')[0].getBoundingClientRect().left
+				});
+				$('.about__visual-line-2').css({
+					width: $('.about__visual-col--last')[0].getBoundingClientRect().right
+				});
+			}
+		}
+		
+		helperCalcLinePosition();
+		
+		$(window).on('resize', (ev) => {
+			helperCalcLinePosition();
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -89,6 +109,7 @@
 		searchCB();
 		countCB();
 		initPathFloatingAnimation();
+		aboutLine();
 		// ==========================================
 	};
 	initNative();

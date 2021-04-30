@@ -10,19 +10,27 @@ const initSwiper = () => {
   * ========== */
   
   // REVIEWS
-  $('.reviews__slider').css({paddingLeft: $('.reviews__title')[0].getBoundingClientRect().left});
-  $('.reviews__bg').css({width: $('.reviews__btn--next')[0].getBoundingClientRect().right + 50});
-  
-  // GALLERY
-  $('.gallery__slider').css({paddingLeft: $('.gallery__title')[0].getBoundingClientRect().left});
-  $('.gallery__bg').css({width: $('.gallery__btn--next')[0].getBoundingClientRect().right + 50});
-  
-  $(window).on('resize', () => {
-    $('.gallery__slider').css({paddingLeft: $('.gallery__title')[0].getBoundingClientRect().left});
-    $('.gallery__bg').css({width: $('.gallery__btn--next')[0].getBoundingClientRect().right + 50});
-    
+  if($('.reviews__slider').length > 0) {
     $('.reviews__slider').css({paddingLeft: $('.reviews__title')[0].getBoundingClientRect().left});
     $('.reviews__bg').css({width: $('.reviews__btn--next')[0].getBoundingClientRect().right + 50});
+  }
+  
+  // GALLERY
+  if($('.gallery__slider').length > 0) {
+    $('.gallery__slider').css({paddingLeft: $('.gallery__title')[0].getBoundingClientRect().left});
+    $('.gallery__bg').css({width: $('.gallery__btn--next')[0].getBoundingClientRect().right + 50});
+  }
+  
+  $(window).on('resize', () => {
+    if($('.gallery__slider').length > 0) {
+      $('.gallery__slider').css({paddingLeft: $('.gallery__title')[0].getBoundingClientRect().left});
+      $('.gallery__bg').css({width: $('.gallery__btn--next')[0].getBoundingClientRect().right + 50});
+    }
+  
+    if($('.reviews__slider').length > 0) {
+      $('.reviews__slider').css({paddingLeft: $('.reviews__title')[0].getBoundingClientRect().left});
+      $('.reviews__bg').css({width: $('.reviews__btn--next')[0].getBoundingClientRect().right + 50});
+    }
   });
   
   // start :: REVIEWS
