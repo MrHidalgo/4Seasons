@@ -8,6 +8,7 @@
 	background-position: center top;
 	background-size: cover;
 
+	&.main--prouct-types,
 	&.main--about {
 		@include adaptive(767) {
 		  background-size: 120%;
@@ -56,7 +57,6 @@
 			}
 
 			&__wrapper {
-				padding-top: 540px;
 				@include adaptive(1279) {
 					padding-top: 400px;
 				}
@@ -72,6 +72,10 @@
 		}
 	}
 
+	&.main--prouct-types {
+		background-position: center calc(100% - 100px);
+	}
+
 	&:after {
 		content: '';
 		z-index: 1;
@@ -80,7 +84,7 @@
 		left: 0;
 		width: 100%;
 		height: 200px;
-		background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+		background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
 	}
 
 	&__bg {
@@ -140,7 +144,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image: url('../img/img-main-overlay.png');
+			background-image: url('../img/img-main-overlay.svg');
 			background-repeat: no-repeat;
 			background-position: left 300px;
 			@include adaptive(1439) {

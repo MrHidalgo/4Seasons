@@ -14,10 +14,10 @@ header#header.header
       .header__wrapper-middle(mobile-block-js)
 
         nav.header__nav
-          a(href="#") LED GROW LIGHTS
-          a(href!= (pageClassName === 'p-about') ? "/index.html#delivery":'#delivery' anchor-js!= (pageClassName === 'p-about')? false:"anchor-js") DELIVERY
+          a(href="#" class!= (pageClassName === 'p-product-types')?"is-active":"") LED GROW LIGHTS
+          a(href!= (innerMenu) ? "/index.html#delivery":'#delivery' anchor-js!= (innerMenu)? false:"anchor-js") DELIVERY
           a(href="/about.html" class!= (pageClassName === 'p-about') ? 'is-active': '') ABOUT US
-          a(href!= (pageClassName === 'p-about') ? "#contacts":"/about.html#contacts" anchor-js!= (pageClassName === 'p-about')?"anchor-js":false) CONTACTS
+          a(href!= (innerMenu) ? "#contacts":"/about.html#contacts" anchor-js!= (innerMenu)?"anchor-js":false) CONTACTS
 
       .header__wrapper-right
 

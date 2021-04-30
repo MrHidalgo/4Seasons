@@ -408,7 +408,7 @@ window.addEventListener('scroll', function (ev) {
 
   var aboutLine = function aboutLine() {
     function helperCalcLinePosition() {
-      if ($('.about').length > 0) {
+      if ($('.about__visual').length > 0) {
         $('.about__visual-line-1').css({
           width: $('.about__visual-col--first')[0].getBoundingClientRect().left
         });

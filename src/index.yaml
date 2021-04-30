@@ -9,4 +9,4 @@ PageList:
   ready: 100
 - file: product-types.html
   titleName: Product Types
-  ready: 0
+  ready: 1
