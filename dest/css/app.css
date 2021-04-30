@@ -5820,4 +5820,132 @@ picture {
   text-transform: uppercase;
 }
 
+/* line 3, src/scss/_components/product-types/_series.scss */
+.series {
+  padding-top: 50px;
+}
+
+/* line 6, src/scss/_components/product-types/_series.scss */
+.series__title {
+  text-align: center;
+}
+
+/* line 11, src/scss/_components/product-types/_series.scss */
+.series__wrapper-1 {
+  padding-bottom: 150px;
+}
+
+/* line 18, src/scss/_components/product-types/_series.scss */
+.series__header {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #006470;
+}
+
+/* line 25, src/scss/_components/product-types/_series.scss */
+.series__subtitle.c-title {
+  padding-bottom: 0;
+}
+
+/* line 29, src/scss/_components/product-types/_series.scss */
+.series__desc {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3c3c3c;
+}
+
+/* line 37, src/scss/_components/product-types/_series.scss */
+.series__desc a {
+  color: #006470;
+  font-weight: 600;
+}
+
+/* line 43, src/scss/_components/product-types/_series.scss */
+.series__section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 48, src/scss/_components/product-types/_series.scss */
+.series__box {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 40px 40px 200px;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+
+/* line 57, src/scss/_components/product-types/_series.scss */
+.series__box-wrapper {
+  position: relative;
+  left: -20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+}
+
+/* line 63, src/scss/_components/product-types/_series.scss */
+.series__box-wrapper > div {
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+  padding-left: 20px;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 68, src/scss/_components/product-types/_series.scss */
+.series__box-wrapper > div:hover {
+  width: -webkit-calc(-webkit-calc(100% / 3) + 100px);
+  width: calc(calc(100% / 3) + 100px);
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 75, src/scss/_components/product-types/_series.scss */
+.series__box-title {
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+}
+
+/* line 83, src/scss/_components/product-types/_series.scss */
+.series__box-desc {
+  padding-bottom: 25px;
+  font-size: 16px;
+  color: #3c3c3c;
+}
+
+/* line 90, src/scss/_components/product-types/_series.scss */
+.series__box .c-btn__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 96, src/scss/_components/product-types/_series.scss */
+.series__box img {
+  z-index: 0;
+  position: absolute;
+  -webkit-transform: translate(5px, 50px);
+      -ms-transform: translate(5px, 50px);
+          transform: translate(5px, 50px);
+  bottom: 0;
+  right: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

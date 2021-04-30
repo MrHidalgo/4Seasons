@@ -2,6 +2,131 @@
 
 section#series.series
   .c-grid
-    .series__wrapper
+
+    p.series__title.c-title 4seasons led grow light series
+
+  .series__wrapper.series__wrapper-1
+
+    .series__box-wrapper
+      div
+        .series__box
+          p.series__box-title helios x series
+          p.series__box-desc The latest LED grow light innovation with Samsung LM301B and Osram diodes, that aim to give growing veterans the ability to achieve new growing heights.
+          .c-btn__wrapper
+            a.c-btn(href="#series1" anchor-js)
+              span View All
+          img(src="img/img-series-1.png" alt="")
+      div
+        .series__box
+          p.series__box-title SAMSUNG LM301B LEDs
+          p.series__box-desc It combines the most efficient LED diodes with two Meanwell ELG 240 drivers and boasts high efficiency conversions and yielding.
+          .c-btn__wrapper
+            a.c-btn(href="#series2" anchor-js)
+              span View All
+          img(src="img/img-series-2.png" alt="")
+      div
+        .series__box
+          p.series__box-title LUMA series
+          p.series__box-desc A highly efficient, silent indoor grow light with a 92% light transmittance. Are produced with passive cooling heat sinks rather than a fan and have a lifespan of 50,000 hours.
+          .c-btn__wrapper
+            a.c-btn(href="#series3" anchor-js)
+              span View All
+          img(src="img/img-series-3.png" alt="")
+
+  .series__wrapper.series__wrapper-2
+    .c-grid
+
+      .series__header#series1
+        p.series__subtitle.c-title 4seasons helios
+
+      p.series__desc!= "The New Zealand designed; Helios LED is part of the new 4Seasons Helios X series. The series offers the latest in LED grow light innovation and aims to give growing veterans the chance to reach new growing heights. These indoor grow lights use both Samsung LM301B, and Osram diodes to enhance the photosynthetic response in your plants – leading to better overall growth and higher yields. <a href='#'>Read more...</a>"
+
+      .series__section
+        .products__box-wrapper
+          each val, idx in [1,2,3]
+            div
+              a.products__box(href="#")
+                .products__box-head
+                  img(src="img/img-product-series-" + val + ".png" alt="")
+                .products__box-body
+                  p.products__box-name Quantum PAR LED Grow Light - Samsung LM301B With Meanwell Driver
+                  .products__box-rating
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-half
+                    span 2 Reviews
+                  p.products__box-old $400
+                  .products__box-content
+                    div
+                      p.products__box-new $990
+                    div
+                      p.products__box-buy Buy
+
+
+      .series__header#series2
+        p.series__subtitle.c-title 4seasons samsung
+
+      p.series__desc!= "The ultra-energy saving Samsung ELG 240 indoor grow light has a comparable power to a 400w HID light, without the additional running costs or heat output. Combining one of the most efficient LED diodes on the market - Osram diodes – with the Meanwell ELG driver, this indoor LED grow light represents the latest technological advances in agricultural lighting. <a href='#'>Read more...</a>"
+
+      .series__section
+        .products__box-wrapper
+          each val, idx in [1,2,3]
+            div
+              a.products__box(href="#")
+                .products__box-head
+                  img(src="img/img-products-" + val + ".png" alt="")
+                .products__box-body
+                  p.products__box-name Quantum PAR LED Grow Light - Samsung LM301B With Meanwell Driver
+                  .products__box-rating
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-half
+                    span 2 Reviews
+                  p.products__box-old $400
+                  .products__box-content
+                    div
+                      p.products__box-new $990
+                    div
+                      p.products__box-buy Buy
+
+
+      .series__header#series3
+        p.series__subtitle.c-title 4seasons LUMA
+
+      p.series__desc!= "4Seasons LUMA LED is a highly efficient, silent indoor LED grow light with a 92% light transmittance. Indoor LED grow lights in the LUMA series are produced with passive cooling heatsinks rather than a fan. Using LED chips instead of bulbs, the grow lights don’t need ballasts or replacement bulbs; instead, you can expect a lifespan exceeding 50,000 hours – so your garden can thrive for years. <a href='#'>Read more...</a>"
+
+      .series__section
+        .products__box-wrapper
+          each val, idx in [4,5,6]
+            div
+              a.products__box(href="#")
+                .products__box-head
+                  img(src="img/img-products-" + val + ".png" alt="")
+                .products__box-body
+                  p.products__box-name Quantum PAR LED Grow Light - Samsung LM301B With Meanwell Driver
+                  .products__box-rating
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-full
+                    i.icon-font.icon-star-half
+                    span 2 Reviews
+                  p.products__box-old $400
+                  .products__box-content
+                    div
+                      p.products__box-new $990
+                    div
+                      p.products__box-buy Buy
+
+
+  .series__wrapper.series__wrapper-3
+
+    .c-btn__wrapper.c-btn__wrapper--center
+      a.c-btn(href="#")
+        span VIEW ALL
 
 // SECTION :: END
