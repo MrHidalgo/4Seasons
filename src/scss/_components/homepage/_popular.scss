@@ -107,6 +107,9 @@
 		flex-wrap: wrap;
 		align-items: center;
 		padding-bottom: 50px;
+		@include adaptive(767) {
+			display: none;
+		}
 
 		span {
 			font-size: 16px;
@@ -320,6 +323,9 @@
 				min-width: 1px;
 				max-width: 100%;
 				padding: 30px;
+				@include adaptive(767) {
+					padding: 15px 15px 15px 0;
+				}
 
 				img {
 					display: block;
@@ -333,6 +339,9 @@
 				width: 100%;
 				max-width: 120px;
 				max-height: 100%;
+				@include adaptive(767) {
+					max-width: 85px;
+				}
 
 				.swiper {
 					&-container {

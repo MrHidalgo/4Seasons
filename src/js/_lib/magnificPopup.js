@@ -114,5 +114,9 @@ const initPopups = () => {
       close: function() {}
     }
   });
+  
+  $('[video-play-js]').on('click', (ev) => {
+    $('[popup-video-js]').trigger('click');
+  });
 
 };

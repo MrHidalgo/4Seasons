@@ -14,7 +14,7 @@
 	}
 
 	&.about--product-types {
-		padding-top: 0;
+		padding-top: 50px;
 		@include adaptive(1023) {
 			padding-top: 100px;
 			padding-bottom: 50px;
@@ -39,11 +39,22 @@
 			}
 		}
 		&-2 {
-			.about__wrapper-left {
-				padding-right: 80px;
-				@include adaptive(1023) {
-					padding-right: 0;
-					padding-bottom: 50px;
+			.about__wrapper {
+				&-left {
+					padding-right: 80px;
+					@include adaptive(1023) {
+						padding-right: 0;
+						padding-bottom: 50px;
+					}
+					@include adaptive(767) {
+						order: 2;
+					}
+				}
+
+				&-right {
+					@include adaptive(767) {
+					  order: 1;
+					}
 				}
 			}
 		}

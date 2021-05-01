@@ -13,6 +13,10 @@
 		$('[search-close-js]').on('click', (ev) => {
 			$('[search-content-js]').removeClass('is-open');
 		});
+		
+		$('[search-footer-js]').on('click', (ev) => {
+			$('[search-js]').trigger('click');
+		});
 	};
 	
 	

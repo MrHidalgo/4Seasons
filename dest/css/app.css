@@ -2100,13 +2100,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/homepage/_main.scss */
+  /* line 65, src/scss/_components/homepage/_main.scss */
+  .main.main--prouct-types .main__title, .main.main--about .main__title {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 75, src/scss/_components/homepage/_main.scss */
   .main.main--prouct-types .main__title {
     max-width: 75%;
   }
 }
 
-/* line 77, src/scss/_components/homepage/_main.scss */
+/* line 83, src/scss/_components/homepage/_main.scss */
 .main:after {
   content: '';
   z-index: 1;
@@ -2121,7 +2128,7 @@ picture {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* line 88, src/scss/_components/homepage/_main.scss */
+/* line 94, src/scss/_components/homepage/_main.scss */
 .main__img {
   z-index: 0;
   position: absolute;
@@ -2131,7 +2138,7 @@ picture {
   height: 80%;
 }
 
-/* line 101, src/scss/_components/homepage/_main.scss */
+/* line 107, src/scss/_components/homepage/_main.scss */
 .main__bg {
   z-index: 0;
   overflow: hidden;
@@ -2142,7 +2149,7 @@ picture {
   height: 100%;
 }
 
-/* line 110, src/scss/_components/homepage/_main.scss */
+/* line 116, src/scss/_components/homepage/_main.scss */
 .main__bg-branch {
   z-index: 3;
   position: absolute;
@@ -2153,7 +2160,7 @@ picture {
   height: 100%;
 }
 
-/* line 119, src/scss/_components/homepage/_main.scss */
+/* line 125, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img {
   opacity: 0.08;
   position: absolute;
@@ -2162,45 +2169,45 @@ picture {
   height: auto;
 }
 
-/* line 126, src/scss/_components/homepage/_main.scss */
+/* line 132, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(1) {
   left: 0;
   bottom: 0;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 126, src/scss/_components/homepage/_main.scss */
+  /* line 132, src/scss/_components/homepage/_main.scss */
   .main__bg-branch img:nth-of-type(1) {
     display: none !important;
   }
 }
 
-/* line 133, src/scss/_components/homepage/_main.scss */
+/* line 139, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(2) {
   left: 25%;
   bottom: 200px;
 }
 
-/* line 137, src/scss/_components/homepage/_main.scss */
+/* line 143, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(3) {
   left: 50%;
   bottom: 100px;
 }
 
-/* line 141, src/scss/_components/homepage/_main.scss */
+/* line 147, src/scss/_components/homepage/_main.scss */
 .main__bg-branch img:nth-of-type(4) {
   bottom: 0;
   right: 0;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 141, src/scss/_components/homepage/_main.scss */
+  /* line 147, src/scss/_components/homepage/_main.scss */
   .main__bg-branch img:nth-of-type(4) {
     display: none !important;
   }
 }
 
-/* line 151, src/scss/_components/homepage/_main.scss */
+/* line 157, src/scss/_components/homepage/_main.scss */
 .main__bg-visual {
   z-index: 2;
   position: absolute;
@@ -2214,11 +2221,11 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 151, src/scss/_components/homepage/_main.scss */
+  /* line 157, src/scss/_components/homepage/_main.scss */
   .main__bg-visual {
     background-position: left 150px;
   }
-  /* line 164, src/scss/_components/homepage/_main.scss */
+  /* line 170, src/scss/_components/homepage/_main.scss */
   .main__bg-visual:after {
     content: '';
     position: absolute;
@@ -2231,7 +2238,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 151, src/scss/_components/homepage/_main.scss */
+  /* line 157, src/scss/_components/homepage/_main.scss */
   .main__bg-visual {
     top: 175px;
     height: 200px;
@@ -2239,13 +2246,13 @@ picture {
     -webkit-background-size: cover;
             background-size: cover;
   }
-  /* line 180, src/scss/_components/homepage/_main.scss */
+  /* line 186, src/scss/_components/homepage/_main.scss */
   .main__bg-visual:after {
     display: none;
   }
 }
 
-/* line 186, src/scss/_components/homepage/_main.scss */
+/* line 192, src/scss/_components/homepage/_main.scss */
 .main__bg-product {
   z-index: 5;
   position: absolute;
@@ -2256,7 +2263,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 186, src/scss/_components/homepage/_main.scss */
+  /* line 192, src/scss/_components/homepage/_main.scss */
   .main__bg-product {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2271,7 +2278,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 186, src/scss/_components/homepage/_main.scss */
+  /* line 192, src/scss/_components/homepage/_main.scss */
   .main__bg-product {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -2282,7 +2289,7 @@ picture {
   }
 }
 
-/* line 204, src/scss/_components/homepage/_main.scss */
+/* line 210, src/scss/_components/homepage/_main.scss */
 .main__bg-product img {
   z-index: 5;
   position: absolute;
@@ -2294,7 +2301,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 204, src/scss/_components/homepage/_main.scss */
+  /* line 210, src/scss/_components/homepage/_main.scss */
   .main__bg-product img {
     bottom: auto;
     right: 25px;
@@ -2303,13 +2310,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 204, src/scss/_components/homepage/_main.scss */
+  /* line 210, src/scss/_components/homepage/_main.scss */
   .main__bg-product img {
     right: 0;
   }
 }
 
-/* line 223, src/scss/_components/homepage/_main.scss */
+/* line 229, src/scss/_components/homepage/_main.scss */
 .main__bg:after {
   content: '';
   z-index: -1;
@@ -2322,14 +2329,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 223, src/scss/_components/homepage/_main.scss */
+  /* line 229, src/scss/_components/homepage/_main.scss */
   .main__bg:after {
     height: -webkit-calc(100% - 375px);
     height: calc(100% - 375px);
   }
 }
 
-/* line 238, src/scss/_components/homepage/_main.scss */
+/* line 244, src/scss/_components/homepage/_main.scss */
 .main__wrapper {
   z-index: 2;
   position: relative;
@@ -2340,21 +2347,21 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 238, src/scss/_components/homepage/_main.scss */
+  /* line 244, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     padding-top: 450px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 238, src/scss/_components/homepage/_main.scss */
+  /* line 244, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     max-width: 650px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 238, src/scss/_components/homepage/_main.scss */
+  /* line 244, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     max-width: 50%;
     padding-bottom: 50px;
@@ -2362,7 +2369,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 238, src/scss/_components/homepage/_main.scss */
+  /* line 244, src/scss/_components/homepage/_main.scss */
   .main__wrapper {
     max-width: 100%;
     padding-top: 310px;
@@ -2370,7 +2377,7 @@ picture {
   }
 }
 
-/* line 262, src/scss/_components/homepage/_main.scss */
+/* line 268, src/scss/_components/homepage/_main.scss */
 .main__title {
   text-transform: uppercase;
   padding-bottom: 50px;
@@ -2380,30 +2387,30 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 262, src/scss/_components/homepage/_main.scss */
+  /* line 268, src/scss/_components/homepage/_main.scss */
   .main__title {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 262, src/scss/_components/homepage/_main.scss */
+  /* line 268, src/scss/_components/homepage/_main.scss */
   .main__title {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 262, src/scss/_components/homepage/_main.scss */
+  /* line 268, src/scss/_components/homepage/_main.scss */
   .main__title {
     width: 100%;
     max-width: 50%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-size: 30px;
   }
 }
 
-/* line 282, src/scss/_components/homepage/_main.scss */
+/* line 288, src/scss/_components/homepage/_main.scss */
 .main__subtitle {
   padding-bottom: 25px;
   font-size: 30px;
@@ -2412,21 +2419,21 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 282, src/scss/_components/homepage/_main.scss */
+  /* line 288, src/scss/_components/homepage/_main.scss */
   .main__subtitle {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 282, src/scss/_components/homepage/_main.scss */
+  /* line 288, src/scss/_components/homepage/_main.scss */
   .main__subtitle {
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
-/* line 296, src/scss/_components/homepage/_main.scss */
+/* line 302, src/scss/_components/homepage/_main.scss */
 .main__desc {
   padding-bottom: 50px;
   font-size: 25px;
@@ -2434,14 +2441,14 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 296, src/scss/_components/homepage/_main.scss */
+  /* line 302, src/scss/_components/homepage/_main.scss */
   .main__desc {
     font-size: 22px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 296, src/scss/_components/homepage/_main.scss */
+  /* line 302, src/scss/_components/homepage/_main.scss */
   .main__desc {
     padding-bottom: 30px;
     font-size: 16px;
@@ -2449,14 +2456,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 309, src/scss/_components/homepage/_main.scss */
+  /* line 315, src/scss/_components/homepage/_main.scss */
   .main__btn {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 313, src/scss/_components/homepage/_main.scss */
+  /* line 319, src/scss/_components/homepage/_main.scss */
   .main__btn .c-btn {
     width: 100%;
     max-width: 200px;
@@ -2809,6 +2816,8 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_products.scss */
 .products {
+  z-index: 2;
+  position: relative;
   padding-top: 80px;
   padding-bottom: 50px;
 }
@@ -2820,20 +2829,20 @@ picture {
   }
 }
 
-/* line 10, src/scss/_components/homepage/_products.scss */
+/* line 12, src/scss/_components/homepage/_products.scss */
 .products__title {
   padding-bottom: 50px;
   text-align: center;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 10, src/scss/_components/homepage/_products.scss */
+  /* line 12, src/scss/_components/homepage/_products.scss */
   .products__title {
     padding-bottom: 30px;
   }
 }
 
-/* line 18, src/scss/_components/homepage/_products.scss */
+/* line 20, src/scss/_components/homepage/_products.scss */
 .products__desc {
   width: 100%;
   max-width: 1140px;
@@ -2846,21 +2855,21 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 18, src/scss/_components/homepage/_products.scss */
+  /* line 20, src/scss/_components/homepage/_products.scss */
   .products__desc {
     padding-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 34, src/scss/_components/homepage/_products.scss */
+  /* line 36, src/scss/_components/homepage/_products.scss */
   .products__btn .c-btn {
     width: 100%;
     max-width: 200px;
   }
 }
 
-/* line 41, src/scss/_components/homepage/_products.scss */
+/* line 43, src/scss/_components/homepage/_products.scss */
 .products__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2873,7 +2882,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 47, src/scss/_components/homepage/_products.scss */
+/* line 49, src/scss/_components/homepage/_products.scss */
 .products__box:hover .products__box-buy:before, .products__box:hover .products__box-buy:after {
   width: 50%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -2881,7 +2890,7 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 55, src/scss/_components/homepage/_products.scss */
+/* line 57, src/scss/_components/homepage/_products.scss */
 .products__box-wrapper {
   position: relative;
   left: -60px;
@@ -2897,7 +2906,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 55, src/scss/_components/homepage/_products.scss */
+  /* line 57, src/scss/_components/homepage/_products.scss */
   .products__box-wrapper {
     left: -30px;
     width: -webkit-calc(100% + 30px);
@@ -2905,7 +2914,7 @@ picture {
   }
 }
 
-/* line 66, src/scss/_components/homepage/_products.scss */
+/* line 68, src/scss/_components/homepage/_products.scss */
 .products__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 3);
@@ -2915,7 +2924,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 66, src/scss/_components/homepage/_products.scss */
+  /* line 68, src/scss/_components/homepage/_products.scss */
   .products__box-wrapper > div {
     max-width: -webkit-calc(100% / 2);
     max-width: calc(100% / 2);
@@ -2924,7 +2933,7 @@ picture {
   }
 }
 
-/* line 79, src/scss/_components/homepage/_products.scss */
+/* line 81, src/scss/_components/homepage/_products.scss */
 .products__box-head {
   overflow: hidden;
   position: relative;
@@ -2946,14 +2955,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 79, src/scss/_components/homepage/_products.scss */
+  /* line 81, src/scss/_components/homepage/_products.scss */
   .products__box-head {
     height: 175px;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
-/* line 93, src/scss/_components/homepage/_products.scss */
+/* line 95, src/scss/_components/homepage/_products.scss */
 .products__box-head img {
   display: block;
   max-width: 100%;
@@ -2962,12 +2971,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 102, src/scss/_components/homepage/_products.scss */
+/* line 104, src/scss/_components/homepage/_products.scss */
 .products__box-body {
   padding-top: 5px;
 }
 
-/* line 106, src/scss/_components/homepage/_products.scss */
+/* line 108, src/scss/_components/homepage/_products.scss */
 .products__box-name {
   padding-bottom: 20px;
   font-size: 16px;
@@ -2976,14 +2985,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 106, src/scss/_components/homepage/_products.scss */
+  /* line 108, src/scss/_components/homepage/_products.scss */
   .products__box-name {
     padding-bottom: 15px;
     font-size: 14px;
   }
 }
 
-/* line 117, src/scss/_components/homepage/_products.scss */
+/* line 119, src/scss/_components/homepage/_products.scss */
 .products__box-rating {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2997,43 +3006,43 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 117, src/scss/_components/homepage/_products.scss */
+  /* line 119, src/scss/_components/homepage/_products.scss */
   .products__box-rating {
     padding-bottom: 15px;
   }
 }
 
-/* line 125, src/scss/_components/homepage/_products.scss */
+/* line 127, src/scss/_components/homepage/_products.scss */
 .products__box-rating .icon-font {
   font-size: 15px;
   color: #efc02f;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 125, src/scss/_components/homepage/_products.scss */
+  /* line 127, src/scss/_components/homepage/_products.scss */
   .products__box-rating .icon-font {
     font-size: 10px;
   }
 }
 
-/* line 132, src/scss/_components/homepage/_products.scss */
+/* line 134, src/scss/_components/homepage/_products.scss */
 .products__box-rating .icon-font:not(:last-of-type) {
   margin-right: 5px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 132, src/scss/_components/homepage/_products.scss */
+  /* line 134, src/scss/_components/homepage/_products.scss */
   .products__box-rating .icon-font:not(:last-of-type) {
     margin-right: 2px;
   }
 }
 
-/* line 139, src/scss/_components/homepage/_products.scss */
+/* line 141, src/scss/_components/homepage/_products.scss */
 .products__box-rating .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 144, src/scss/_components/homepage/_products.scss */
+/* line 146, src/scss/_components/homepage/_products.scss */
 .products__box-rating span {
   display: block;
   padding-top: 2px;
@@ -3043,13 +3052,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 144, src/scss/_components/homepage/_products.scss */
+  /* line 146, src/scss/_components/homepage/_products.scss */
   .products__box-rating span {
     font-size: 12px;
   }
 }
 
-/* line 156, src/scss/_components/homepage/_products.scss */
+/* line 158, src/scss/_components/homepage/_products.scss */
 .products__box-old {
   text-decoration: line-through;
   font-weight: 300;
@@ -3058,26 +3067,26 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 156, src/scss/_components/homepage/_products.scss */
+  /* line 158, src/scss/_components/homepage/_products.scss */
   .products__box-old {
     font-size: 14px;
   }
 }
 
-/* line 166, src/scss/_components/homepage/_products.scss */
+/* line 168, src/scss/_components/homepage/_products.scss */
 .products__box-new {
   font-size: 20px;
   color: #ff0000;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 166, src/scss/_components/homepage/_products.scss */
+  /* line 168, src/scss/_components/homepage/_products.scss */
   .products__box-new {
     font-size: 18px;
   }
 }
 
-/* line 174, src/scss/_components/homepage/_products.scss */
+/* line 176, src/scss/_components/homepage/_products.scss */
 .products__box-buy {
   position: relative;
   font-size: 16px;
@@ -3087,13 +3096,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 174, src/scss/_components/homepage/_products.scss */
+  /* line 176, src/scss/_components/homepage/_products.scss */
   .products__box-buy {
     font-size: 14px;
   }
 }
 
-/* line 184, src/scss/_components/homepage/_products.scss */
+/* line 186, src/scss/_components/homepage/_products.scss */
 .products__box-buy:before, .products__box-buy:after {
   content: '';
   position: absolute;
@@ -3106,17 +3115,17 @@ picture {
   transition: width 0.3s ease-in-out;
 }
 
-/* line 195, src/scss/_components/homepage/_products.scss */
+/* line 197, src/scss/_components/homepage/_products.scss */
 .products__box-buy:before {
   left: 50%;
 }
 
-/* line 198, src/scss/_components/homepage/_products.scss */
+/* line 200, src/scss/_components/homepage/_products.scss */
 .products__box-buy:after {
   right: 50%;
 }
 
-/* line 203, src/scss/_components/homepage/_products.scss */
+/* line 205, src/scss/_components/homepage/_products.scss */
 .products__box-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3135,7 +3144,7 @@ picture {
 /* line 3, src/scss/_components/homepage/_delivery.scss */
 .delivery {
   position: relative;
-  padding-top: 100px;
+  padding-top: 125px;
   padding-bottom: 90px;
 }
 
@@ -3522,15 +3531,8 @@ picture {
 /* line 111, src/scss/_components/homepage/_product.scss */
 .product__desc {
   padding-bottom: 100px;
-  font-size: 30px;
+  font-size: 25px;
   color: #3c3c3c;
-}
-
-@media screen and (max-width: 1535px) {
-  /* line 111, src/scss/_components/homepage/_product.scss */
-  .product__desc {
-    font-size: 26px;
-  }
 }
 
 @media screen and (max-width: 1365px) {
@@ -3734,25 +3736,32 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 111, src/scss/_components/homepage/_popular.scss */
+@media screen and (max-width: 767px) {
+  /* line 105, src/scss/_components/homepage/_popular.scss */
+  .popular__info {
+    display: none;
+  }
+}
+
+/* line 114, src/scss/_components/homepage/_popular.scss */
 .popular__info span {
   font-size: 16px;
   color: #3c3c3c;
 }
 
-/* line 115, src/scss/_components/homepage/_popular.scss */
+/* line 118, src/scss/_components/homepage/_popular.scss */
 .popular__info span + img {
   margin-left: 10px;
 }
 
-/* line 120, src/scss/_components/homepage/_popular.scss */
+/* line 123, src/scss/_components/homepage/_popular.scss */
 .popular__info img {
   display: block;
   max-width: 1000%;
   height: auto;
 }
 
-/* line 127, src/scss/_components/homepage/_popular.scss */
+/* line 130, src/scss/_components/homepage/_popular.scss */
 .popular__ships {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3768,24 +3777,24 @@ picture {
   padding-bottom: 15px;
 }
 
-/* line 133, src/scss/_components/homepage/_popular.scss */
+/* line 136, src/scss/_components/homepage/_popular.scss */
 .popular__ships .icon-font {
   color: #00a79b;
   font-size: 24px;
 }
 
-/* line 137, src/scss/_components/homepage/_popular.scss */
+/* line 140, src/scss/_components/homepage/_popular.scss */
 .popular__ships .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 142, src/scss/_components/homepage/_popular.scss */
+/* line 145, src/scss/_components/homepage/_popular.scss */
 .popular__ships span {
   font-size: 16px;
   color: #00a79b;
 }
 
-/* line 148, src/scss/_components/homepage/_popular.scss */
+/* line 151, src/scss/_components/homepage/_popular.scss */
 .popular__count {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3798,7 +3807,7 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 154, src/scss/_components/homepage/_popular.scss */
+/* line 157, src/scss/_components/homepage/_popular.scss */
 .popular__count > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3815,19 +3824,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 154, src/scss/_components/homepage/_popular.scss */
+  /* line 157, src/scss/_components/homepage/_popular.scss */
   .popular__count > div:nth-of-type(1) {
     width: 100%;
     max-width: 150px;
   }
 }
 
-/* line 166, src/scss/_components/homepage/_popular.scss */
+/* line 169, src/scss/_components/homepage/_popular.scss */
 .popular__count > div + div {
   padding-left: 25px;
 }
 
-/* line 171, src/scss/_components/homepage/_popular.scss */
+/* line 174, src/scss/_components/homepage/_popular.scss */
 .popular__count-btn {
   position: relative;
   display: -webkit-box;
@@ -3850,13 +3859,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 171, src/scss/_components/homepage/_popular.scss */
+  /* line 174, src/scss/_components/homepage/_popular.scss */
   .popular__count-btn {
     width: 30px;
   }
 }
 
-/* line 185, src/scss/_components/homepage/_popular.scss */
+/* line 188, src/scss/_components/homepage/_popular.scss */
 .popular__count-btn:after {
   content: '';
   position: absolute;
@@ -3867,29 +3876,29 @@ picture {
   background-color: #006470;
 }
 
-/* line 194, src/scss/_components/homepage/_popular.scss */
+/* line 197, src/scss/_components/homepage/_popular.scss */
 .popular__count-btn:nth-of-type(1) {
   -webkit-border-radius: 2rem 0 0 2rem;
           border-radius: 2rem 0 0 2rem;
 }
 
-/* line 197, src/scss/_components/homepage/_popular.scss */
+/* line 200, src/scss/_components/homepage/_popular.scss */
 .popular__count-btn:nth-of-type(1):after {
   right: 0;
 }
 
-/* line 201, src/scss/_components/homepage/_popular.scss */
+/* line 204, src/scss/_components/homepage/_popular.scss */
 .popular__count-btn:nth-of-type(2) {
   -webkit-border-radius: 0 2rem 2rem 0;
           border-radius: 0 2rem 2rem 0;
 }
 
-/* line 204, src/scss/_components/homepage/_popular.scss */
+/* line 207, src/scss/_components/homepage/_popular.scss */
 .popular__count-btn:nth-of-type(2):after {
   left: 0;
 }
 
-/* line 210, src/scss/_components/homepage/_popular.scss */
+/* line 213, src/scss/_components/homepage/_popular.scss */
 .popular__count-input {
   outline: none;
   position: relative;
@@ -3915,7 +3924,7 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 228, src/scss/_components/homepage/_popular.scss */
+/* line 231, src/scss/_components/homepage/_popular.scss */
 .popular__details {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3928,7 +3937,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 232, src/scss/_components/homepage/_popular.scss */
+/* line 235, src/scss/_components/homepage/_popular.scss */
 .popular__details p {
   padding-bottom: 5px;
   font-size: 16px;
@@ -3936,7 +3945,7 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 239, src/scss/_components/homepage/_popular.scss */
+/* line 242, src/scss/_components/homepage/_popular.scss */
 .popular__details ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3949,25 +3958,25 @@ picture {
           flex-direction: column;
 }
 
-/* line 243, src/scss/_components/homepage/_popular.scss */
+/* line 246, src/scss/_components/homepage/_popular.scss */
 .popular__details ul li {
   color: #3c3c3c;
   font-size: 16px;
 }
 
-/* line 247, src/scss/_components/homepage/_popular.scss */
+/* line 250, src/scss/_components/homepage/_popular.scss */
 .popular__details ul li:not(:last-of-type) {
   padding-bottom: 5px;
 }
 
-/* line 253, src/scss/_components/homepage/_popular.scss */
+/* line 256, src/scss/_components/homepage/_popular.scss */
 .popular__details a {
   font-size: 16px;
   font-weight: 600;
   color: #006470;
 }
 
-/* line 260, src/scss/_components/homepage/_popular.scss */
+/* line 263, src/scss/_components/homepage/_popular.scss */
 .popular__share {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3983,19 +3992,19 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 265, src/scss/_components/homepage/_popular.scss */
+/* line 268, src/scss/_components/homepage/_popular.scss */
 .popular__share p {
   font-size: 20px;
   font-weight: 700;
   color: #3c3c3c;
 }
 
-/* line 270, src/scss/_components/homepage/_popular.scss */
+/* line 273, src/scss/_components/homepage/_popular.scss */
 .popular__share p + div {
   padding-left: 15px;
 }
 
-/* line 275, src/scss/_components/homepage/_popular.scss */
+/* line 278, src/scss/_components/homepage/_popular.scss */
 .popular__share > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4007,7 +4016,7 @@ picture {
           align-items: center;
 }
 
-/* line 279, src/scss/_components/homepage/_popular.scss */
+/* line 282, src/scss/_components/homepage/_popular.scss */
 .popular__share > div a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4023,7 +4032,7 @@ picture {
           justify-content: center;
 }
 
-/* line 285, src/scss/_components/homepage/_popular.scss */
+/* line 288, src/scss/_components/homepage/_popular.scss */
 .popular__share > div a:hover .icon-font {
   color: #006470;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4031,12 +4040,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 291, src/scss/_components/homepage/_popular.scss */
+/* line 294, src/scss/_components/homepage/_popular.scss */
 .popular__share > div a:not(:last-of-type) {
   margin-right: 15px;
 }
 
-/* line 295, src/scss/_components/homepage/_popular.scss */
+/* line 298, src/scss/_components/homepage/_popular.scss */
 .popular__share > div a .icon-font {
   font-size: 30px;
   color: #3c3c3c;
@@ -4045,7 +4054,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 304, src/scss/_components/homepage/_popular.scss */
+/* line 307, src/scss/_components/homepage/_popular.scss */
 .popular__slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4064,12 +4073,12 @@ picture {
   padding-top: 40px;
 }
 
-/* line 312, src/scss/_components/homepage/_popular.scss */
+/* line 315, src/scss/_components/homepage/_popular.scss */
 .popular__slider > div {
   max-height: 100%;
 }
 
-/* line 315, src/scss/_components/homepage/_popular.scss */
+/* line 318, src/scss/_components/homepage/_popular.scss */
 .popular__slider > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4092,7 +4101,14 @@ picture {
   padding: 30px;
 }
 
-/* line 324, src/scss/_components/homepage/_popular.scss */
+@media screen and (max-width: 767px) {
+  /* line 318, src/scss/_components/homepage/_popular.scss */
+  .popular__slider > div:nth-of-type(1) {
+    padding: 15px 15px 15px 0;
+  }
+}
+
+/* line 330, src/scss/_components/homepage/_popular.scss */
 .popular__slider > div:nth-of-type(1) img {
   display: block;
   max-width: 100%;
@@ -4101,39 +4117,46 @@ picture {
   margin-right: auto;
 }
 
-/* line 332, src/scss/_components/homepage/_popular.scss */
+/* line 338, src/scss/_components/homepage/_popular.scss */
 .popular__slider > div:nth-of-type(2) {
   width: 100%;
   max-width: 120px;
   max-height: 100%;
 }
 
-/* line 338, src/scss/_components/homepage/_popular.scss */
+@media screen and (max-width: 767px) {
+  /* line 338, src/scss/_components/homepage/_popular.scss */
+  .popular__slider > div:nth-of-type(2) {
+    max-width: 85px;
+  }
+}
+
+/* line 347, src/scss/_components/homepage/_popular.scss */
 .popular__slider > div:nth-of-type(2) .swiper-container {
   height: -webkit-calc(120px * 4 + (20px * 3));
   height: calc(120px * 4 + (20px * 3));
 }
 
 @media screen and (max-width: 767px) {
-  /* line 338, src/scss/_components/homepage/_popular.scss */
+  /* line 347, src/scss/_components/homepage/_popular.scss */
   .popular__slider > div:nth-of-type(2) .swiper-container {
     height: -webkit-calc(80px * 4 + (15px * 3));
     height: calc(80px * 4 + (15px * 3));
   }
 }
 
-/* line 345, src/scss/_components/homepage/_popular.scss */
+/* line 354, src/scss/_components/homepage/_popular.scss */
 .popular__slider > div:nth-of-type(2) .swiper-slide {
   cursor: pointer;
 }
 
-/* line 353, src/scss/_components/homepage/_popular.scss */
+/* line 362, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-container {
   width: 100%;
   height: 100%;
 }
 
-/* line 358, src/scss/_components/homepage/_popular.scss */
+/* line 367, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-slide {
   position: relative;
   display: -webkit-box;
@@ -4150,7 +4173,7 @@ picture {
           justify-content: center;
 }
 
-/* line 364, src/scss/_components/homepage/_popular.scss */
+/* line 373, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-slide img {
   display: block;
   max-width: 100%;
@@ -4160,7 +4183,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 373, src/scss/_components/homepage/_popular.scss */
+/* line 382, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-slide a {
   z-index: 10;
   position: absolute;
@@ -4193,7 +4216,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 389, src/scss/_components/homepage/_popular.scss */
+/* line 398, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-slide a:hover {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 100, 112, 0.15);
           box-shadow: 0 2px 10px 0 rgba(0, 100, 112, 0.15);
@@ -4205,7 +4228,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 394, src/scss/_components/homepage/_popular.scss */
+/* line 403, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-slide a:hover .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -4213,7 +4236,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 400, src/scss/_components/homepage/_popular.scss */
+/* line 409, src/scss/_components/homepage/_popular.scss */
 .popular__slider .swiper-slide a .icon-font {
   color: #000000;
   font-size: 20px;
@@ -4261,11 +4284,26 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 18, src/scss/_components/homepage/_video.scss */
   .video__bg .icon-font {
-    font-size: 150px;
+    z-index: 10;
+    left: 50%;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.9);
+    -webkit-filter: drop-shadow(0 5px 10px rgba(255, 255, 255, 0.55));
+            filter: drop-shadow(0 5px 10px rgba(255, 255, 255, 0.55));
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+  }
+  /* line 34, src/scss/_components/homepage/_video.scss */
+  .video__bg .icon-font:hover {
+    color: #ffffff;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
 }
 
-/* line 36, src/scss/_components/homepage/_video.scss */
+/* line 46, src/scss/_components/homepage/_video.scss */
 .video__bg:after {
   content: '';
   z-index: 1;
@@ -4277,7 +4315,7 @@ picture {
   background-color: rgba(7, 7, 7, 0.7);
 }
 
-/* line 48, src/scss/_components/homepage/_video.scss */
+/* line 58, src/scss/_components/homepage/_video.scss */
 .video__wrapper {
   z-index: 5;
   position: relative;
@@ -4299,7 +4337,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 48, src/scss/_components/homepage/_video.scss */
+  /* line 58, src/scss/_components/homepage/_video.scss */
   .video__wrapper {
     min-height: unset;
     padding-top: 30px;
@@ -4308,7 +4346,7 @@ picture {
   }
 }
 
-/* line 63, src/scss/_components/homepage/_video.scss */
+/* line 73, src/scss/_components/homepage/_video.scss */
 .video__wrapper > div {
   width: 100%;
   max-width: 515px;
@@ -4316,14 +4354,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 63, src/scss/_components/homepage/_video.scss */
+  /* line 73, src/scss/_components/homepage/_video.scss */
   .video__wrapper > div {
     max-width: 100%;
     margin-right: auto;
   }
 }
 
-/* line 74, src/scss/_components/homepage/_video.scss */
+/* line 84, src/scss/_components/homepage/_video.scss */
 .video__desc {
   padding-bottom: 50px;
   font-size: 16px;
@@ -4331,7 +4369,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 74, src/scss/_components/homepage/_video.scss */
+  /* line 84, src/scss/_components/homepage/_video.scss */
   .video__desc {
     padding-bottom: 30px;
     color: #3c3c3c;
@@ -4339,14 +4377,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 84, src/scss/_components/homepage/_video.scss */
+  /* line 94, src/scss/_components/homepage/_video.scss */
   .video__btn {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 88, src/scss/_components/homepage/_video.scss */
+  /* line 98, src/scss/_components/homepage/_video.scss */
   .video__btn .c-btn {
     width: 100%;
     max-width: 200px;
@@ -4723,7 +4761,7 @@ picture {
 
 /* line 16, src/scss/_components/about/_about.scss */
 .about.about--product-types {
-  padding-top: 0;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -4769,37 +4807,57 @@ picture {
   }
 }
 
-/* line 42, src/scss/_components/about/_about.scss */
+/* line 43, src/scss/_components/about/_about.scss */
 .about__wrapper-2 .about__wrapper-left {
   padding-right: 80px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 42, src/scss/_components/about/_about.scss */
+  /* line 43, src/scss/_components/about/_about.scss */
   .about__wrapper-2 .about__wrapper-left {
     padding-right: 0;
     padding-bottom: 50px;
   }
 }
 
-/* line 51, src/scss/_components/about/_about.scss */
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_components/about/_about.scss */
+  .about__wrapper-2 .about__wrapper-left {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/_components/about/_about.scss */
+  .about__wrapper-2 .about__wrapper-right {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+/* line 62, src/scss/_components/about/_about.scss */
 .about__wrapper:not(:last-of-type) {
   padding-bottom: 100px;
 }
 
-/* line 55, src/scss/_components/about/_about.scss */
+/* line 66, src/scss/_components/about/_about.scss */
 .about__wrapper-left, .about__wrapper-right {
   width: 50%;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 55, src/scss/_components/about/_about.scss */
+  /* line 66, src/scss/_components/about/_about.scss */
   .about__wrapper-left, .about__wrapper-right {
     width: 100%;
   }
 }
 
-/* line 64, src/scss/_components/about/_about.scss */
+/* line 75, src/scss/_components/about/_about.scss */
 .about__media {
   position: relative;
   display: -webkit-box;
@@ -4812,7 +4870,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 69, src/scss/_components/about/_about.scss */
+/* line 80, src/scss/_components/about/_about.scss */
 .about__media:after {
   content: '';
   z-index: 0;
@@ -4828,7 +4886,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 69, src/scss/_components/about/_about.scss */
+  /* line 80, src/scss/_components/about/_about.scss */
   .about__media:after {
     -webkit-transform: translate(15px, -15px);
         -ms-transform: translate(15px, -15px);
@@ -4836,7 +4894,7 @@ picture {
   }
 }
 
-/* line 84, src/scss/_components/about/_about.scss */
+/* line 95, src/scss/_components/about/_about.scss */
 .about__media-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4845,7 +4903,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 84, src/scss/_components/about/_about.scss */
+  /* line 95, src/scss/_components/about/_about.scss */
   .about__media-wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -4855,7 +4913,7 @@ picture {
   }
 }
 
-/* line 92, src/scss/_components/about/_about.scss */
+/* line 103, src/scss/_components/about/_about.scss */
 .about__media img {
   z-index: 2;
   position: relative;
@@ -4865,51 +4923,51 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 101, src/scss/_components/about/_about.scss */
+  /* line 112, src/scss/_components/about/_about.scss */
   .about__title {
     text-align: center;
   }
 }
 
-/* line 107, src/scss/_components/about/_about.scss */
+/* line 118, src/scss/_components/about/_about.scss */
 .about__desc {
   font-size: 16px;
   color: #3c3c3c;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 107, src/scss/_components/about/_about.scss */
+  /* line 118, src/scss/_components/about/_about.scss */
   .about__desc {
     text-align: center;
   }
 }
 
-/* line 114, src/scss/_components/about/_about.scss */
+/* line 125, src/scss/_components/about/_about.scss */
 .about__desc:not(:last-of-type) {
   padding-bottom: 25px;
 }
 
-/* line 119, src/scss/_components/about/_about.scss */
+/* line 130, src/scss/_components/about/_about.scss */
 .about__btn {
   padding-top: 25px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 119, src/scss/_components/about/_about.scss */
+  /* line 130, src/scss/_components/about/_about.scss */
   .about__btn {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 124, src/scss/_components/about/_about.scss */
+  /* line 135, src/scss/_components/about/_about.scss */
   .about__btn .c-btn {
     width: 100%;
     max-width: 200px;
   }
 }
 
-/* line 131, src/scss/_components/about/_about.scss */
+/* line 142, src/scss/_components/about/_about.scss */
 .about__visual {
   position: relative;
   display: -webkit-box;
@@ -4927,7 +4985,7 @@ picture {
   margin-top: 50px;
 }
 
-/* line 138, src/scss/_components/about/_about.scss */
+/* line 149, src/scss/_components/about/_about.scss */
 .about__visual-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4939,7 +4997,7 @@ picture {
           justify-content: center;
 }
 
-/* line 143, src/scss/_components/about/_about.scss */
+/* line 154, src/scss/_components/about/_about.scss */
 .about__visual-line {
   position: absolute;
   bottom: 0;
@@ -4947,7 +5005,7 @@ picture {
   background-color: #3c3c3c;
 }
 
-/* line 149, src/scss/_components/about/_about.scss */
+/* line 160, src/scss/_components/about/_about.scss */
 .about__visual-line-1 {
   left: 20px;
   -webkit-transform: translateX(-100%);
@@ -4955,7 +5013,7 @@ picture {
           transform: translateX(-100%);
 }
 
-/* line 153, src/scss/_components/about/_about.scss */
+/* line 164, src/scss/_components/about/_about.scss */
 .about__visual-line-2 {
   right: 20px;
   -webkit-transform: translateX(100%);
@@ -4963,7 +5021,7 @@ picture {
           transform: translateX(100%);
 }
 
-/* line 159, src/scss/_components/about/_about.scss */
+/* line 170, src/scss/_components/about/_about.scss */
 .about__visual-col {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4984,14 +5042,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 159, src/scss/_components/about/_about.scss */
+  /* line 170, src/scss/_components/about/_about.scss */
   .about__visual-col {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 172, src/scss/_components/about/_about.scss */
+/* line 183, src/scss/_components/about/_about.scss */
 .about__visual .icon-font {
   margin-bottom: 15px;
   font-size: 60px;
@@ -4999,13 +5057,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 172, src/scss/_components/about/_about.scss */
+  /* line 183, src/scss/_components/about/_about.scss */
   .about__visual .icon-font {
     font-size: 50px;
   }
 }
 
-/* line 181, src/scss/_components/about/_about.scss */
+/* line 192, src/scss/_components/about/_about.scss */
 .about__visual span {
   display: block;
   width: 10px;
@@ -5017,7 +5075,7 @@ picture {
   background-color: #3c3c3c;
 }
 
-/* line 191, src/scss/_components/about/_about.scss */
+/* line 202, src/scss/_components/about/_about.scss */
 .about__visual u {
   display: block;
   width: 2px;
@@ -5031,7 +5089,7 @@ picture {
 /* line 3, src/scss/_components/about/_where.scss */
 .where {
   position: relative;
-  padding-top: 100px;
+  padding-top: 125px;
   padding-bottom: 100px;
   background-color: #f3f3f3;
 }
@@ -5163,9 +5221,8 @@ picture {
 /* line 85, src/scss/_components/about/_where.scss */
 .where__block-head {
   overflow: hidden;
+  outline: none;
   position: relative;
-  width: 160px;
-  height: 160px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5178,6 +5235,8 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 160px;
+  height: 160px;
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
@@ -5187,7 +5246,7 @@ picture {
   background-color: #000000;
 }
 
-/* line 100, src/scss/_components/about/_where.scss */
+/* line 101, src/scss/_components/about/_where.scss */
 .where__block-head img {
   display: block;
   max-width: 100%;
@@ -5196,14 +5255,14 @@ picture {
   margin-right: auto;
 }
 
-/* line 109, src/scss/_components/about/_where.scss */
+/* line 110, src/scss/_components/about/_where.scss */
 .where__block-body {
   padding-top: 30px;
 }
 
-/* line 112, src/scss/_components/about/_where.scss */
+/* line 113, src/scss/_components/about/_where.scss */
 .where__block-body p {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -5212,19 +5271,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 112, src/scss/_components/about/_where.scss */
+  /* line 113, src/scss/_components/about/_where.scss */
   .where__block-body p {
     font-size: 16px;
   }
 }
 
-/* line 123, src/scss/_components/about/_where.scss */
+/* line 124, src/scss/_components/about/_where.scss */
 .where__block-body p a {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* line 129, src/scss/_components/about/_where.scss */
+/* line 130, src/scss/_components/about/_where.scss */
 .where__block-body span {
   display: block;
   font-size: 16px;
@@ -5234,7 +5293,7 @@ picture {
 
 /* line 3, src/scss/_components/about/_contacts.scss */
 .contacts {
-  padding-top: 100px;
+  padding-top: 125px;
 }
 
 @media screen and (max-width: 767px) {
@@ -5262,17 +5321,16 @@ picture {
   font-size: 16px;
   color: #3c3c3c;
   text-align: center;
-  line-height: 1.8;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 26, src/scss/_components/about/_contacts.scss */
+  /* line 25, src/scss/_components/about/_contacts.scss */
   .contacts__desc br {
     display: none;
   }
 }
 
-/* line 32, src/scss/_components/about/_contacts.scss */
+/* line 31, src/scss/_components/about/_contacts.scss */
 .contacts__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5281,7 +5339,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 32, src/scss/_components/about/_contacts.scss */
+  /* line 31, src/scss/_components/about/_contacts.scss */
   .contacts__wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -5289,20 +5347,20 @@ picture {
   }
 }
 
-/* line 38, src/scss/_components/about/_contacts.scss */
+/* line 37, src/scss/_components/about/_contacts.scss */
 .contacts__wrapper-left {
   width: 100%;
   max-width: 300px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 38, src/scss/_components/about/_contacts.scss */
+  /* line 37, src/scss/_components/about/_contacts.scss */
   .contacts__wrapper-left {
     max-width: 100%;
   }
 }
 
-/* line 46, src/scss/_components/about/_contacts.scss */
+/* line 45, src/scss/_components/about/_contacts.scss */
 .contacts__wrapper-right {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -5314,14 +5372,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 46, src/scss/_components/about/_contacts.scss */
+  /* line 45, src/scss/_components/about/_contacts.scss */
   .contacts__wrapper-right {
     padding-top: 30px;
     padding-left: 0;
   }
 }
 
-/* line 58, src/scss/_components/about/_contacts.scss */
+/* line 57, src/scss/_components/about/_contacts.scss */
 .contacts__info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5335,7 +5393,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 58, src/scss/_components/about/_contacts.scss */
+  /* line 57, src/scss/_components/about/_contacts.scss */
   .contacts__info {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -5349,7 +5407,7 @@ picture {
   }
 }
 
-/* line 69, src/scss/_components/about/_contacts.scss */
+/* line 68, src/scss/_components/about/_contacts.scss */
 .contacts__info > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5367,7 +5425,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/about/_contacts.scss */
+  /* line 68, src/scss/_components/about/_contacts.scss */
   .contacts__info > div {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -5376,19 +5434,19 @@ picture {
   }
 }
 
-/* line 77, src/scss/_components/about/_contacts.scss */
+/* line 76, src/scss/_components/about/_contacts.scss */
 .contacts__info > div:not(:last-of-type) {
   padding-bottom: 30px;
 }
 
-/* line 82, src/scss/_components/about/_contacts.scss */
+/* line 81, src/scss/_components/about/_contacts.scss */
 .contacts__info-title {
   font-weight: 700;
   color: #3c3c3c;
   font-size: 16px;
 }
 
-/* line 88, src/scss/_components/about/_contacts.scss */
+/* line 87, src/scss/_components/about/_contacts.scss */
 .contacts__info a,
 .contacts__info span {
   display: block;
@@ -5396,19 +5454,19 @@ picture {
   font-size: 16px;
 }
 
-/* line 94, src/scss/_components/about/_contacts.scss */
+/* line 93, src/scss/_components/about/_contacts.scss */
 .contacts__info a strong,
 .contacts__info span strong {
   font-weight: 700;
 }
 
-/* line 100, src/scss/_components/about/_contacts.scss */
+/* line 99, src/scss/_components/about/_contacts.scss */
 .contacts__info a:hover {
   color: #006470;
   text-decoration: underline;
 }
 
-/* line 107, src/scss/_components/about/_contacts.scss */
+/* line 106, src/scss/_components/about/_contacts.scss */
 .contacts__form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5422,18 +5480,18 @@ picture {
   width: 100%;
 }
 
-/* line 112, src/scss/_components/about/_contacts.scss */
+/* line 111, src/scss/_components/about/_contacts.scss */
 .contacts__form-field {
   position: relative;
   width: 100%;
 }
 
-/* line 116, src/scss/_components/about/_contacts.scss */
+/* line 115, src/scss/_components/about/_contacts.scss */
 .contacts__form-field:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
-/* line 120, src/scss/_components/about/_contacts.scss */
+/* line 119, src/scss/_components/about/_contacts.scss */
 .contacts__form-field label {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5442,7 +5500,7 @@ picture {
   width: 100%;
 }
 
-/* line 124, src/scss/_components/about/_contacts.scss */
+/* line 123, src/scss/_components/about/_contacts.scss */
 .contacts__form-field label input,
 .contacts__form-field label textarea {
   outline: none;
@@ -5492,13 +5550,13 @@ picture {
   font-size: 16px;
 }
 
-/* line 140, src/scss/_components/about/_contacts.scss */
+/* line 139, src/scss/_components/about/_contacts.scss */
 .contacts__form-field label input {
   height: 60px;
   padding: 0 20px;
 }
 
-/* line 145, src/scss/_components/about/_contacts.scss */
+/* line 144, src/scss/_components/about/_contacts.scss */
 .contacts__form-field label textarea {
   resize: none;
   height: 150px;
@@ -5506,12 +5564,12 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 152, src/scss/_components/about/_contacts.scss */
+  /* line 151, src/scss/_components/about/_contacts.scss */
   .contacts__form-field .c-btn {
     width: 100%;
     max-width: 200px;
   }
-  /* line 157, src/scss/_components/about/_contacts.scss */
+  /* line 156, src/scss/_components/about/_contacts.scss */
   .contacts__form-field .c-btn__wrapper {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -5520,300 +5578,7 @@ picture {
   }
 }
 
-/* line 162, src/scss/_components/about/_contacts.scss */
-.contacts__form-field .c-btn span {
-  text-transform: uppercase;
-}
-
-/* line 3, src/scss/_components/about/_contacts.scss */
-.contacts {
-  padding-top: 100px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 3, src/scss/_components/about/_contacts.scss */
-  .contacts {
-    padding-top: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 9, src/scss/_components/about/_contacts.scss */
-  .contacts__title {
-    text-align: center;
-  }
-}
-
-/* line 14, src/scss/_components/about/_contacts.scss */
-.contacts__title-1 {
-  text-align: center;
-}
-
-/* line 19, src/scss/_components/about/_contacts.scss */
-.contacts__desc {
-  padding-bottom: 50px;
-  font-size: 16px;
-  color: #3c3c3c;
-  text-align: center;
-  line-height: 1.8;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 26, src/scss/_components/about/_contacts.scss */
-  .contacts__desc br {
-    display: none;
-  }
-}
-
-/* line 32, src/scss/_components/about/_contacts.scss */
-.contacts__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 32, src/scss/_components/about/_contacts.scss */
-  .contacts__wrapper {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-}
-
-/* line 38, src/scss/_components/about/_contacts.scss */
-.contacts__wrapper-left {
-  width: 100%;
-  max-width: 300px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 38, src/scss/_components/about/_contacts.scss */
-  .contacts__wrapper-left {
-    max-width: 100%;
-  }
-}
-
-/* line 46, src/scss/_components/about/_contacts.scss */
-.contacts__wrapper-right {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-width: 100%;
-  padding-left: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 46, src/scss/_components/about/_contacts.scss */
-  .contacts__wrapper-right {
-    padding-top: 30px;
-    padding-left: 0;
-  }
-}
-
-/* line 58, src/scss/_components/about/_contacts.scss */
-.contacts__info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 58, src/scss/_components/about/_contacts.scss */
-  .contacts__info {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 20px;
-    border: 2px solid #006470;
-    -webkit-border-radius: 2rem;
-            border-radius: 2rem;
-    background-color: #efefef;
-  }
-}
-
-/* line 69, src/scss/_components/about/_contacts.scss */
-.contacts__info > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/about/_contacts.scss */
-  .contacts__info > div {
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-/* line 77, src/scss/_components/about/_contacts.scss */
-.contacts__info > div:not(:last-of-type) {
-  padding-bottom: 30px;
-}
-
-/* line 82, src/scss/_components/about/_contacts.scss */
-.contacts__info-title {
-  font-weight: 700;
-  color: #3c3c3c;
-  font-size: 16px;
-}
-
-/* line 88, src/scss/_components/about/_contacts.scss */
-.contacts__info a,
-.contacts__info span {
-  display: block;
-  color: #3c3c3c;
-  font-size: 16px;
-}
-
-/* line 94, src/scss/_components/about/_contacts.scss */
-.contacts__info a strong,
-.contacts__info span strong {
-  font-weight: 700;
-}
-
-/* line 100, src/scss/_components/about/_contacts.scss */
-.contacts__info a:hover {
-  color: #006470;
-  text-decoration: underline;
-}
-
-/* line 107, src/scss/_components/about/_contacts.scss */
-.contacts__form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-
-/* line 112, src/scss/_components/about/_contacts.scss */
-.contacts__form-field {
-  position: relative;
-  width: 100%;
-}
-
-/* line 116, src/scss/_components/about/_contacts.scss */
-.contacts__form-field:not(:last-of-type) {
-  margin-bottom: 30px;
-}
-
-/* line 120, src/scss/_components/about/_contacts.scss */
-.contacts__form-field label {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-}
-
-/* line 124, src/scss/_components/about/_contacts.scss */
-.contacts__form-field label input,
-.contacts__form-field label textarea {
-  outline: none;
-  position: relative;
-  width: 100%;
-  border: 2px solid #006470;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-border-radius: 2rem;
-          border-radius: 2rem;
-  background-color: #efefef;
-  font-size: 16px;
-}
-
-/* line 88, src/scss/_utilities/_mixin.scss */
-.contacts__form-field label input.placeholder,
-.contacts__form-field label textarea.placeholder {
-  color: #b0b0b0;
-  font-size: 16px;
-}
-
-/* line 89, src/scss/_utilities/_mixin.scss */
-.contacts__form-field label input:-moz-placeholder,
-.contacts__form-field label textarea:-moz-placeholder {
-  color: #b0b0b0;
-  font-size: 16px;
-}
-
-/* line 90, src/scss/_utilities/_mixin.scss */
-.contacts__form-field label input::-moz-placeholder,
-.contacts__form-field label textarea::-moz-placeholder {
-  color: #b0b0b0;
-  font-size: 16px;
-}
-
-/* line 91, src/scss/_utilities/_mixin.scss */
-.contacts__form-field label input:-ms-input-placeholder,
-.contacts__form-field label textarea:-ms-input-placeholder {
-  color: #b0b0b0;
-  font-size: 16px;
-}
-
-/* line 92, src/scss/_utilities/_mixin.scss */
-.contacts__form-field label input::-webkit-input-placeholder,
-.contacts__form-field label textarea::-webkit-input-placeholder {
-  color: #b0b0b0;
-  font-size: 16px;
-}
-
-/* line 140, src/scss/_components/about/_contacts.scss */
-.contacts__form-field label input {
-  height: 60px;
-  padding: 0 20px;
-}
-
-/* line 145, src/scss/_components/about/_contacts.scss */
-.contacts__form-field label textarea {
-  resize: none;
-  height: 150px;
-  padding: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 152, src/scss/_components/about/_contacts.scss */
-  .contacts__form-field .c-btn {
-    width: 100%;
-    max-width: 200px;
-  }
-  /* line 157, src/scss/_components/about/_contacts.scss */
-  .contacts__form-field .c-btn__wrapper {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-/* line 162, src/scss/_components/about/_contacts.scss */
+/* line 161, src/scss/_components/about/_contacts.scss */
 .contacts__form-field .c-btn span {
   text-transform: uppercase;
 }
@@ -5840,7 +5605,7 @@ picture {
   }
 }
 
-/* line 21, src/scss/_components/product-types/_series.scss */
+/* line 19, src/scss/_components/product-types/_series.scss */
 .series__header {
   padding-left: 20px;
   padding-right: 20px;
@@ -5849,30 +5614,29 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 21, src/scss/_components/product-types/_series.scss */
+  /* line 19, src/scss/_components/product-types/_series.scss */
   .series__header {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 32, src/scss/_components/product-types/_series.scss */
+/* line 30, src/scss/_components/product-types/_series.scss */
 .series__subtitle.c-title {
   padding-bottom: 0;
 }
 
-/* line 36, src/scss/_components/product-types/_series.scss */
+/* line 34, src/scss/_components/product-types/_series.scss */
 .series__desc {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   font-size: 16px;
-  line-height: 28px;
   color: #3c3c3c;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 36, src/scss/_components/product-types/_series.scss */
+  /* line 34, src/scss/_components/product-types/_series.scss */
   .series__desc {
     padding-left: 0;
     padding-right: 0;
@@ -5881,19 +5645,27 @@ picture {
   }
 }
 
-/* line 50, src/scss/_components/product-types/_series.scss */
+/* line 47, src/scss/_components/product-types/_series.scss */
 .series__desc a {
   color: #006470;
   font-weight: 600;
 }
 
-/* line 56, src/scss/_components/product-types/_series.scss */
+/* line 53, src/scss/_components/product-types/_series.scss */
 .series__section {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 61, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 53, src/scss/_components/product-types/_series.scss */
+  .series__section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 62, src/scss/_components/product-types/_series.scss */
 .series__box {
   cursor: pointer;
   position: relative;
@@ -5905,13 +5677,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 61, src/scss/_components/product-types/_series.scss */
+  /* line 62, src/scss/_components/product-types/_series.scss */
   .series__box {
     padding-bottom: 150px;
   }
 }
 
-/* line 73, src/scss/_components/product-types/_series.scss */
+/* line 74, src/scss/_components/product-types/_series.scss */
 .series__box-wrapper {
   position: relative;
   left: -20px;
@@ -5924,7 +5696,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 73, src/scss/_components/product-types/_series.scss */
+  /* line 74, src/scss/_components/product-types/_series.scss */
   .series__box-wrapper {
     left: 0;
     -webkit-flex-wrap: wrap;
@@ -5936,7 +5708,7 @@ picture {
   }
 }
 
-/* line 86, src/scss/_components/product-types/_series.scss */
+/* line 87, src/scss/_components/product-types/_series.scss */
 .series__box-wrapper > div {
   width: -webkit-calc(100% / 3);
   width: calc(100% / 3);
@@ -5947,7 +5719,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 86, src/scss/_components/product-types/_series.scss */
+  /* line 87, src/scss/_components/product-types/_series.scss */
   .series__box-wrapper > div {
     width: 100%;
     padding-left: 0;
@@ -5955,7 +5727,7 @@ picture {
   }
 }
 
-/* line 96, src/scss/_components/product-types/_series.scss */
+/* line 97, src/scss/_components/product-types/_series.scss */
 .series__box-wrapper > div:hover {
   width: -webkit-calc(-webkit-calc(100% / 3) + 100px);
   width: calc(calc(100% / 3) + 100px);
@@ -5965,14 +5737,21 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 96, src/scss/_components/product-types/_series.scss */
+  /* line 97, src/scss/_components/product-types/_series.scss */
   .series__box-wrapper > div:hover {
     width: -webkit-calc(100% / 3);
     width: calc(100% / 3);
   }
 }
 
-/* line 106, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 767px) {
+  /* line 97, src/scss/_components/product-types/_series.scss */
+  .series__box-wrapper > div:hover {
+    width: 100%;
+  }
+}
+
+/* line 110, src/scss/_components/product-types/_series.scss */
 .series__box-title {
   padding-bottom: 25px;
   font-weight: 700;
@@ -5981,26 +5760,34 @@ picture {
   color: #3c3c3c;
 }
 
-/* line 114, src/scss/_components/product-types/_series.scss */
+/* line 118, src/scss/_components/product-types/_series.scss */
 .series__box-desc {
+  min-height: 115px;
   padding-bottom: 25px;
   font-size: 16px;
   color: #3c3c3c;
 }
 
-/* line 121, src/scss/_components/product-types/_series.scss */
+@media screen and (max-width: 1439px) {
+  /* line 118, src/scss/_components/product-types/_series.scss */
+  .series__box-desc {
+    min-height: 135px;
+  }
+}
+
+/* line 129, src/scss/_components/product-types/_series.scss */
 .series__box .c-btn__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 127, src/scss/_components/product-types/_series.scss */
+/* line 135, src/scss/_components/product-types/_series.scss */
 .series__box img {
   z-index: 0;
   position: absolute;
-  -webkit-transform: translate(5px, 50px);
-      -ms-transform: translate(5px, 50px);
-          transform: translate(5px, 50px);
+  -webkit-transform: translate(0, 50px);
+      -ms-transform: translate(0, 50px);
+          transform: translate(0, 50px);
   bottom: 0;
   right: 0;
   display: block;
@@ -6009,7 +5796,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 127, src/scss/_components/product-types/_series.scss */
+  /* line 135, src/scss/_components/product-types/_series.scss */
   .series__box img {
     max-width: 75%;
   }

@@ -61,6 +61,12 @@
 					padding-top: 210px;
 				}
 			}
+			
+			&__title {
+				@include adaptive(767) {
+					max-width: 80%;
+				}
+			}
 		}
 	}
 
@@ -274,7 +280,7 @@
 		@include adaptive(767) {
 			width: 100%;
 			max-width: 50%;
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 			font-size: 30px;
 		}
 	}
@@ -289,7 +295,7 @@
 		}
 		@include adaptive(767) {
 			padding-bottom: 15px;
-			font-size: 20px;
+			font-size: 18px;
 		}
 	}
 

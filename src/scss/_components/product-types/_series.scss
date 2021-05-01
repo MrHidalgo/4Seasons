@@ -14,8 +14,6 @@
 				padding-bottom: 50px;
 			}
 		}
-
-		&-2 {}
 	}
 
 	&__header {
@@ -38,7 +36,6 @@
 		padding-right: 20px;
 		padding-bottom: 20px;
 		font-size: 16px;
-		line-height: 28px;
 		color: #3c3c3c;
 		@include adaptive(767) {
 			padding-left: 0;
@@ -56,6 +53,10 @@
 	&__section {
 		padding-left: 20px;
 		padding-right: 20px;
+		@include adaptive(767) {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	&__box {
@@ -99,6 +100,9 @@
 					@include adaptive(1279) {
 						width: calc(100% / 3);
 					}
+					@include adaptive(767) {
+						width: 100%;
+					}
 				}
 			}
 		}
@@ -112,9 +116,13 @@
 		}
 
 		&-desc {
+			min-height: 115px;
 			padding-bottom: 25px;
 			font-size: 16px;
 			color: #3c3c3c;
+			@include adaptive(1439) {
+				min-height: 135px;
+			}
 		}
 
 		.c-btn {
@@ -127,7 +135,7 @@
 		img {
 			z-index: 0;
 			position: absolute;
-			transform: translate(5px, 50px);
+			transform: translate(0, 50px);
 			bottom: 0;
 			right: 0;
 			display: block;

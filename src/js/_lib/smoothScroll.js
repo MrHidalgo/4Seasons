@@ -21,7 +21,9 @@ const initSmoothScroll = (
     }, animateSpeed);
 
     if($(window).width() < 768) {
-      $('[hamburger-js]').trigger('click');
+      if($('[hamburger-js]').hasClass('is-active')) {
+        $('[hamburger-js]').trigger('click');
+      }
     }
   });
 

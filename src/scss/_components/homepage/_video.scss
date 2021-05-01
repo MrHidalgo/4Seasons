@@ -24,7 +24,17 @@
 			color: rgba(#ffffff, 0.07);
 			font-size: 650px;
 			@include adaptive(767) {
-				font-size: 150px;
+				z-index: 10;
+				left: 50%;
+				font-size: 100px;
+				color: rgba(#ffffff, 0.9);
+				filter: drop-shadow(0 5px 10px rgba(#fff, 0.55));
+				@include transition(color);
+
+				&:hover {
+					color: #ffffff;
+					@include transition(color);
+				}
 			}
 		}
 

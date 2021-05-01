@@ -17,7 +17,7 @@ header#header.header
           a(href="/product-types.html" class!= (pageClassName === 'p-product-types')?"is-active":"") LED GROW LIGHTS
           a(href!= (innerMenu) ? "/index.html#delivery":'#delivery' anchor-js!= (innerMenu)? false:"anchor-js") DELIVERY
           a(href="/about.html" class!= (pageClassName === 'p-about') ? 'is-active': '') ABOUT US
-          a(href!= (innerMenu) ? "#contacts":"/about.html#contacts" anchor-js!= (innerMenu)?"anchor-js":false) CONTACTS
+          a(href!= (innerMenu) ? "/about.html#contacts":"#contacts" anchor-js!= (!innerMenu)?"anchor-js":false) CONTACTS
 
       .header__wrapper-right
 
